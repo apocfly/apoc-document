@@ -22,7 +22,9 @@ export default defineConfig({
                     },
                     {
                         text: '飞行员部分',
-                        items: []
+                        items: [
+                            {text: 'Swift安装教程', link: '/pilot/swift'}
+                        ]
                     },
                     {
                         text: '管制员部分',
