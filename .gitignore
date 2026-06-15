@@ -1,0 +1,14 @@
+# IDE configuration
+.idea/
+.vscode/
+
+# AI agent configuration
+.claude/
+.codex/
+
+# installed packages
+node_modules/
+
+# build and cache files
+docs/.vitepress/cache
+dist/
