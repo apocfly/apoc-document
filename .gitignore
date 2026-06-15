@@ -11,4 +11,9 @@ node_modules/
 
 # build and cache files
 docs/.vitepress/cache
+docs/.vitepress/dist
 dist/
+
+# OS files
+.DS_Store
+Thumbs.db
