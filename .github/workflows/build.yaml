@@ -1,0 +1,41 @@
+name: Build latest
+
+on:
+  push:
+    branches:
+      - "main"
+    paths-ignore:
+      - ".gitignore"
+      - "CLAUDE.md"
+      - "CODE_OF_CONDUCT.md"
+      - "LICENSE"
+      - "README.md"
+  pull_request:
+    branches:
+      - "main"
+  workflow_dispatch:
+
+jobs:
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        name: Checkout
+
+      - uses: actions/setup-node@v6
+        name: Setup Node.js
+        with:
+          node-version: 'lts/Krypton'
+          check-latest: true
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build
+        run: npm run docs:build
+
+      - uses: actions/upload-artifact@v7
+        with:
+          name: "docs-nightly-build"
+          path: "docs/.vitepress/dist"
+          compression-level: 9
