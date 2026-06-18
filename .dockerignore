@@ -1,0 +1,11 @@
+.idea/
+.vscode/
+.claude/
+docs/.vitepress/cache
+docs/.vitepress/dist
+node_modules/
+.gitignore
+CLAUDE.md
+CODE_OF_CONDUCT.md
+LICENSE
+README.md
