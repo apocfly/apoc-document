@@ -11,7 +11,7 @@ export default defineConfig({
             themeConfig: {
                 nav: [
                     {text: '首页', link: '/'},
-                    {text: '行为准则', link: '/general/coc'},
+                    {text: '行为准则', link: '/general/coc'}
                 ],
                 sidebar: [
                     {
@@ -23,7 +23,8 @@ export default defineConfig({
                     {
                         text: '飞行员部分',
                         items: [
-                            {text: 'Swift安装教程', link: '/pilot/swift'}
+                            {text: 'Swift安装教程', link: '/pilot/swift'},
+                            {text: 'RVSM空域', link: '/pilot/rvsm'}
                         ]
                     },
                     {
