@@ -4,6 +4,9 @@ import {defineConfig} from 'vitepress'
 export default defineConfig({
     title: "Apoc Document",
     description: "A document website for apoc",
+    markdown: {
+        math: true
+    },
     locales: {
         root: {
             label: '简体中文',
@@ -11,7 +14,7 @@ export default defineConfig({
             themeConfig: {
                 nav: [
                     {text: '首页', link: '/'},
-                    {text: '行为准则', link: '/general/coc'}
+                    {text: '行为准则', link: '/general/coc'},
                 ],
                 sidebar: [
                     {
@@ -21,11 +24,17 @@ export default defineConfig({
                         ]
                     },
                     {
-                        text: '飞行员部分',
+                        text: '软件使用教程',
                         items: [
                             {text: 'Swift安装使用教程', link: '/pilot/swift'},
                             {text: 'Teamspeak安装使用教程', link: '/pilot/teamspeak'},
                             {text: 'RVSM空域', link: '/pilot/rvsm'}
+                        ]
+                    },
+                    {
+                        text: '技术文档',
+                        items: [
+                            {text: '语音系统概述', link: '/technical/voice'}
                         ]
                     }
                 ],

@@ -9,7 +9,7 @@ hero:
     - theme: brand
       text: 立刻开始
       link: /general/coc
-#
+
 #features:
 #  - icon: 📋
 #    title: 行为准则
