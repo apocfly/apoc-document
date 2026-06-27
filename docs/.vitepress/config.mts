@@ -24,12 +24,9 @@ export default defineConfig({
                         text: '飞行员部分',
                         items: [
                             {text: 'Swift安装教程', link: '/pilot/swift'},
+                            {text: 'Teamspeak使用教程', link: '/pilot/teamspeak'},
                             {text: 'RVSM空域', link: '/pilot/rvsm'}
                         ]
-                    },
-                    {
-                        text: '管制员部分',
-                        items: []
                     }
                 ],
                 socialLinks: [
