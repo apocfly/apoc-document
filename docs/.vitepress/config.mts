@@ -26,9 +26,15 @@ export default defineConfig({
                     {
                         text: '软件使用教程',
                         items: [
-                            {text: 'Swift安装使用教程', link: '/pilot/swift'},
+                            {text: 'Swift安装教程', link: '/pilot/swift'},
                             {text: 'Teamspeak安装使用教程', link: '/pilot/teamspeak'},
-                            {text: 'RVSM空域', link: '/pilot/rvsm'}
+                        ]
+                    },
+                    {
+                        text: '航空知识',
+                        items: [
+                            {text: 'RVSM空域', link: '/pilot/rvsm'},
+                            {text: '航空器分类', link: '/pilot/aircraft_type'},
                         ]
                     },
                     {
