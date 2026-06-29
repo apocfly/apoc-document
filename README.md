@@ -1,6 +1,6 @@
 # Apoc 文档站
 
-[![CC-BY-4.0]][CC-BY-4]![Markdown][![VitePress]][VitePress-URL]
+[![CC-BY-NC-SA-4.0]][CC-BY-NC-SA-4]![Markdown][![VitePress]][VitePress-URL]
 
 > **在线访问**：[https://docs.apocfly.com](https://docs.apocfly.com)
 
@@ -102,7 +102,7 @@ npm run docs:build
 
 ## 许可证
 
-本项目采用 [知识共享署名 4.0 协议国际版 (CC BY 4.0)][CC-BY-4] 授权。
+本项目采用 [知识共享署名—非商业性使用—相同方式共享 4.0 协议国际版 (CC BY-NC-SA 4.0)][CC-BY-NC-SA-4] 授权。
 
 ### 您可以自由地：
 
@@ -113,13 +113,13 @@ npm run docs:build
 
 - **署名** — 您必须给出适当的署名，提供指向本许可协议的链接，并说明是否对原作品作了修改
 
-完整许可协议请参见：[CC BY 4.0 中文版][CC-BY-4]
+完整许可协议请参见：[CC BY 4.0 中文版][CC-BY-NC-SA-4]
 
 ---
 
-[CC-BY-4.0]: https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg?style=for-the-badge
+[CC-BY-NC-SA-4.0]: https://img.shields.io/badge/License-CC%20BY%20NC%20SA%204.0-lightgrey.svg?style=for-the-badge
 
-[CC-BY-4]: https://creativecommons.org/licenses/by/4.0/deed.zh-hans
+[CC-BY-NC-SA-4]: https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans
 
 [Markdown]: https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=Markdown&logoColor=ffffff
 
