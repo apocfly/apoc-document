@@ -4,6 +4,7 @@ import {defineConfig} from 'vitepress'
 export default defineConfig({
     title: "Apoc Document",
     description: "A document website for apoc",
+    ignoreDeadLinks: true,
     markdown: {
         math: true
     },
