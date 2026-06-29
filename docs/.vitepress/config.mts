@@ -49,6 +49,7 @@ export default defineConfig({
                     {icon: 'github', link: 'https://github.com/apocfly/apoc-document'}
                 ],
                 footer: {
+                    message: '本项目的全部文字在 <a href="https://creativecommons.org/licenses/by/4.0/deed.zh-hans">CC BY 4.0</a> 条款下提供，附加条款亦可能应用。保留所有未明示授予的权利。',
                     copyright: '仅供模拟飞行使用，请勿用于真实飞行。 Copyright © 2026-present APOCFLY'
                 }
             }
