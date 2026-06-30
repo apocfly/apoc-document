@@ -36,6 +36,7 @@ export default defineConfig({
                         items: [
                             {text: 'RVSM空域', link: '/pilot/rvsm'},
                             {text: '航空器分类', link: '/pilot/aircraft_type'},
+                            {text: '空域分类', link: '/pilot/airspace'}
                         ]
                     },
                     {
