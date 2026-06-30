@@ -27,8 +27,8 @@ export default defineConfig({
                     {
                         text: '软件使用教程',
                         items: [
-                            {text: 'Swift安装教程', link: '/pilot/swift'},
-                            {text: 'Teamspeak安装使用教程', link: '/pilot/teamspeak'},
+                            {text: 'Swift安装教程', link: '/tutorial/swift'},
+                            {text: 'Teamspeak安装使用教程', link: '/tutorial/teamspeak'},
                         ]
                     },
                     {
