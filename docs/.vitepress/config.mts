@@ -37,7 +37,8 @@ export default defineConfig({
                             {text: 'RVSM空域', link: '/pilot/rvsm'},
                             {text: '航空器分类', link: '/pilot/aircraft_type'},
                             {text: '空域分类', link: '/pilot/airspace'},
-                            {text: '飞行情报区', link: '/pilot/FIR'}
+                            {text: '飞行情报区', link: '/pilot/FIR'},
+                            {text: '气压基准与高度表拨正程序', link: '/pilot/QNH'}
                         ]
                     },
                     {
