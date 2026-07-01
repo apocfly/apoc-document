@@ -115,5 +115,4 @@
 [1] [平行或近似平行仪表跑道同时运行 (SOIR) 手册.第二版, 2020 年.Doc 9643.ISBN 978-92-9258-916-5](https://www.unitingaviation.com/livecycle/Documents/ICAO_Doc_9643-2_CH.pdf)
 [2] [《平行跑道同时仪表运行管理规定.中国民用航空总局.CCAR-98TM》]
 
-
 [《平行跑道同时仪表运行管理规定.中国民用航空总局.CCAR-98TM》]: http://www.caac.gov.cn/XXGK/XXGK/MHGZ/202304/P020230414612653535333.pdf
