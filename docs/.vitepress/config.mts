@@ -41,7 +41,8 @@ export default defineConfig({
                             {text: '航空器分类', link: '/pilot/aircraft_type'},
                             {text: '空域分类', link: '/pilot/airspace'},
                             {text: '飞行情报区', link: '/pilot/FIR'},
-                            {text: '气压基准与高度表拨正程序', link: '/pilot/QNH'}
+                            {text: '气压基准与高度表拨正程序', link: '/pilot/QNH'},
+                            {text: '平行跑道运行', link: '/pilot/parallel_runway'}
                         ]
                     },
                     {
