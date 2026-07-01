@@ -25,11 +25,12 @@ export default defineConfig({
                         ]
                     },
                     {
-                        text: '软件使用教程',
+                        text: '使用教程',
                         items: [
                             {text: 'Swift安装教程', link: '/tutorial/swift'},
                             {text: 'Teamspeak安装使用教程', link: '/tutorial/teamspeak'},
-                            {text: 'AudioClient安装使用教程', link: '/tutorial/audio_client'}
+                            {text: 'AudioClient安装使用教程', link: '/tutorial/audio_client'},
+                            {text: '飞行计划提交', link: '/tutorial/flightplan'}
                         ]
                     },
                     {
