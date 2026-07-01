@@ -29,6 +29,7 @@ export default defineConfig({
                         items: [
                             {text: 'Swift安装教程', link: '/tutorial/swift'},
                             {text: 'Teamspeak安装使用教程', link: '/tutorial/teamspeak'},
+                            {text: 'AudioClient安装使用教程', link: '/tutorial/audio_client'}
                         ]
                     },
                     {
