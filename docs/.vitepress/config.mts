@@ -43,7 +43,8 @@ export default defineConfig({
                             {text: '飞行情报区', link: '/pilot/FIR'},
                             {text: '气压基准与高度表拨正程序', link: '/pilot/QNH'},
                             {text: '平行跑道运行', link: '/pilot/parallel_runway'},
-                            {text: '应答机', link: '/pilot/squawk'}
+                            {text: '应答机', link: '/pilot/squawk'},
+                            {text: '航空器尾流间隔', link: '/pilot/turbulence'}
                         ]
                     },
                     {
