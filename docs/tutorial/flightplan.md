@@ -16,13 +16,13 @@
 - 尾流分类：按照飞机最大起飞重量进行填写，[在此处查询](https://www.icao.int/publications/doc-8643-aircraft-type-designators/search)
 
 > [!Note]
-> 填写的为：WTC（ICAO**四类**），而不是RECAT-CN分类。可[在此](../pilot/aircraft_type)，了解更多
+> 填写的为：WTC（ICAO**四类**），而不是RECAT-CN分类。可[在此](../aviation/aircraft_type)了解更多
 
 - 设备代码（ICAO/FAA）：通用代码（SDE2E3FGILRWXY）。此部分比较复杂，将在完整计划填写完成后再次进行解析。
 - 二次雷达代码（仅ICAO）：通用代码（LB2）。同上，将在后文阐述。
 - 离场机场（ICAO）：[在此查询](https://airportcodes.aero/)
 - 离场时间（HHMM）：填写航空器预计离场的时间（UTC时间），[在此查询](https://time.is/zh/UTC)
-- 巡航高度（ft）：推荐填写8900-12500米之间的飞行高度层，需要符合东单西双原则，[在此查询](./RVSM_flight_level.md)
+- 巡航高度（ft）：推荐填写8900-12500米之间的飞行高度层，需要符合东单西双原则，[在此查询](../aviation/rvsm.md)
 - 巡航真空速（knots）：按照飞机正常的巡航真空速填写（不是马赫数）。如果您不知道，也可填写最大巡航速度，[在此查询](https://skybrary.aero/aircraft-types)，管制员对此部分内容不进行检查
 - 到达机场（ICAO）：同离场机场，[在此查询](https://airportcodes.aero/)
 - 备降机场（ICAO）：非必填项，顾名思义

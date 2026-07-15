@@ -19,9 +19,10 @@ export default defineConfig({
                 ],
                 sidebar: [
                     {
-                        text: '平台总则',
+                        text: '平台守则',
                         items: [
-                            {text: '行为准则', link: '/general/coc'}
+                            {text: '行为准则', link: '/general/coc'},
+                            {text: '管制员培训大纲', link: '/general/cto'}
                         ]
                     },
                     {
@@ -37,14 +38,14 @@ export default defineConfig({
                     {
                         text: '航空知识',
                         items: [
-                            {text: 'RVSM空域', link: '/pilot/rvsm'},
-                            {text: '航空器分类', link: '/pilot/aircraft_type'},
-                            {text: '空域分类', link: '/pilot/airspace'},
-                            {text: '飞行情报区', link: '/pilot/FIR'},
-                            {text: '气压基准与高度表拨正程序', link: '/pilot/QNH'},
-                            {text: '平行跑道运行', link: '/pilot/parallel_runway'},
-                            {text: '应答机', link: '/pilot/squawk'},
-                            {text: '航空器尾流间隔', link: '/pilot/turbulence'}
+                            {text: 'RVSM空域', link: '/aviation/rvsm'},
+                            {text: '航空器分类', link: '/aviation/aircraft_type'},
+                            {text: '空域分类', link: '/aviation/airspace'},
+                            {text: '飞行情报区', link: '/aviation/FIR'},
+                            {text: '气压基准与高度表拨正程序', link: '/aviation/QNH'},
+                            {text: '平行跑道运行', link: '/aviation/parallel_runway'},
+                            {text: '应答机', link: '/aviation/squawk'},
+                            {text: '航空器尾流间隔', link: '/aviation/turbulence'}
                         ]
                     },
                     {
