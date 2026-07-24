@@ -24,7 +24,7 @@ DCL（数字放行）则提供了一种更加高效的方式。它通过ACARS数
 
 首先进入Hoppie's ACARS页面。（[Hoppie's ACARS Registration](https://www.hoppie.nl/acars/system/register.html)）
 
-![](./images/hpdcl/image1.png)
+![](images/dcl/1.png)
 
 点击：
 
@@ -50,7 +50,7 @@ DCL（数字放行）则提供了一种更加高效的方式。它通过ACARS数
 
 输入邮箱和LOGON CODE，点击Retrieve Account。
 
-![](./images/hpdcl/image2.png)
+![](images/dcl/2.png)
 
 下方Your Network 选择PDAsim并点击Update Network。
 
@@ -58,7 +58,7 @@ DCL（数字放行）则提供了一种更加高效的方式。它通过ACARS数
 
 以Fenix为例，开启Fenix外挂软件
 
-![](./images/hpdcl/image3.png)选择Hoppie，输入LOGON CODE，点击APPLY。
+![](images/dcl/3.png)选择Hoppie，输入LOGON CODE，点击APPLY。
 
 如果右侧出现绿色勾选标志，说明：
 
@@ -69,7 +69,7 @@ DCL（数字放行）则提供了一种更加高效的方式。它通过ACARS数
 
 2.1开启DCDU
 
-![](./images/hpdcl/image4.png)
+![](images/dcl/4.png)
 
 打开Fenix平板
 
@@ -97,7 +97,7 @@ AOC MENU
 
 FLT INIT
 
-![](./images/hpdcl/image5.png)
+![](images/dcl/5.png)
 
 填写：
 
@@ -109,7 +109,7 @@ FLT INIT
 
 2.3发送DCL申请
 
-![](./images/hpdcl/image6.png)
+![](images/dcl/6.png)
 
 进入：
 
@@ -137,7 +137,7 @@ PRE DEP CLRNCE
 
 * 对应管制席位登录代码
 
-![](./images/hpdcl/image7.png)
+![](images/dcl/7.png)
 
 2.4接收管制放行
 
@@ -153,7 +153,7 @@ PRE DEP CLRNCE
 
 2.5接受并发送放行
 
-![](./images/hpdcl/image8.png)
+![](images/dcl/8.png)
 
 DCDU：
 
@@ -169,7 +169,7 @@ DCDU：
 
 2.6查看历史放行记录
 
-![](./images/hpdcl/image9.png)
+![](images/dcl/9.png)
 
 进入：
 
@@ -189,15 +189,15 @@ MSG RECORD
 
 * 需要先确认ACARS连接
 
-![](./images/hpdcl/image10.png)
+![](images/dcl/10.png)
 
 MCDU中选择：
 
 * XFR TO DCDU
 
-![](./images/hpdcl/image11.png)
+![](images/dcl/11.png)
 
-![](./images/hpdcl/image12.png)
+![](images/dcl/12.png)
 
 * 将信息转移至DCDU后发送
 
@@ -207,7 +207,7 @@ DCL入口：
 
 ATC COM页面
 
-![](./images/hpdcl/image13.png)
+![](images/dcl/13.png)
 
 操作区别：
 
@@ -217,11 +217,11 @@ XFR TO MAILBOX
 
 将放行信息转入Mailbox
 
-![](./images/hpdcl/image14.png)
+![](images/dcl/14.png)
 
 再发送。
 
-![](./images/hpdcl/image15.png)
+![](images/dcl/15.png)
 
 3.3Tollis A346
 
@@ -229,7 +229,7 @@ XFR TO MAILBOX
 
 Login Code输入方式：
 
-![](./images/hpdcl/image16.png)
+![](images/dcl/16.png)
 
 * 无法直接键盘输入
 * 需要复制Login Code
@@ -239,7 +239,7 @@ FLT INIT输入方式：
 
 不需要手动填写FLT INIT
 
-![](./images/hpdcl/image17.png)
+![](images/dcl/17.png)
 
 点击L1，自动读取Simbrief数据。
 

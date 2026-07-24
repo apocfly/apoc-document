@@ -32,7 +32,8 @@ export default defineConfig({
                             {text: 'Teamspeak安装使用教程', link: '/tutorial/teamspeak'},
                             {text: 'AudioClient安装使用教程', link: '/tutorial/audio_client'},
                             {text: '飞行计划提交', link: '/tutorial/flightplan'},
-                            {text: '航路查询', link: '/tutorial/route'}
+                            {text: '航路查询', link: '/tutorial/route'},
+                            {text: 'Hoppie Acars DCL放行使用教程', link: '/tutorial/dcl'}
                         ]
                     },
                     {
@@ -45,7 +46,8 @@ export default defineConfig({
                             {text: '气压基准与高度表拨正程序', link: '/aviation/QNH'},
                             {text: '平行跑道运行', link: '/aviation/parallel_runway'},
                             {text: '应答机', link: '/aviation/squawk'},
-                            {text: '航空器尾流间隔', link: '/aviation/turbulence'}
+                            {text: '航空器尾流间隔', link: '/aviation/turbulence'},
+                            {text: '程序过渡点', link: '/aviation/via'}
                         ]
                     },
                     {

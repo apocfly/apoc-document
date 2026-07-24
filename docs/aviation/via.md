@@ -119,9 +119,9 @@ FAF
 
 例如在AIRAC2607的上海虹桥机场的SASAN8程序中
 
-![](./images/via/image1.png)图表 1 eAIP-ZSSS-4P-3
+![](images/via/1.png)图表 1 eAIP-ZSSS-4P-3
 
-![](./images/via/image2.png)
+![](images/via/2.png)
 
 图表 2 Jeppesen-ZSSS-10-2E
 
@@ -136,11 +136,11 @@ FAF
 
 3.2APP进近图中的过渡点
 
-![](./images/via/image3.png)
+![](images/via/3.png)
 
 图表 3 eAIP-ZSSS-5L-7
 
-![](./images/via/image4.png)
+![](images/via/4.png)
 
 图表 4 Jeppesen-ZSSS-11-7
 
@@ -169,8 +169,8 @@ FMC → DEP/ARR
 
 选择对应机场的到达页面。
 
-![](./images/via/image5.png)
-![](./images/via/image6.png)
+![](images/via/5.png)
+![](images/via/6.png)
 
 在页面中确认：
 
@@ -192,8 +192,8 @@ TRANS（右侧）：选择对应的进近过渡。
 
 以空客 A320 系列 MCDU 为例：
 
-![](./images/via/image7.png)
-![](./images/via/image8.png)
+![](images/via/7.png)
+![](images/via/8.png)
 
 进入：MCDU → F-PLN → ARRIVAL
 

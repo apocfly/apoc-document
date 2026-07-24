@@ -46,7 +46,7 @@ ICAO 在 DOC 8643 中按`最大起飞重量(MTOW)`定义分为`四类`：
 > [!IMPORTANT]
 > 当前机为 `波音 757` 时，尽管其 MTOW 属于中型，但按重型机尾流间隔执行。
 
-具体雷达及非雷达间隔数值，请参阅《[航空器尾流间隔](./Wake_turbulence_separation_minima)》。
+具体雷达及非雷达间隔数值，请参阅《[航空器尾流间隔](./turbulence.md)》。
 
 ## 3. 中国尾流重新分类(RECAT‑CN)
 
@@ -64,7 +64,7 @@ ICAO 在 DOC 8643 中按`最大起飞重量(MTOW)`定义分为`四类`：
 > [!IMPORTANT]
 > B757‑200/‑300 在 `RECAT‑CN` 中归为 `中型机`，但实际尾流间隔仍须参照 `波音 757` 特殊规定。
 
-相应的间隔标准详见《[航空器尾流间隔](./Wake_turbulence_separation_minima)》。
+相应的间隔标准详见《[航空器尾流间隔](./turbulence.md)》。
 
 ## 4. 特殊机型标识符
 
