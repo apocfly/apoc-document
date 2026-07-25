@@ -47,7 +47,8 @@ export default defineConfig({
                             {text: '平行跑道运行', link: '/aviation/parallel_runway'},
                             {text: '应答机', link: '/aviation/squawk'},
                             {text: '航空器尾流间隔', link: '/aviation/turbulence'},
-                            {text: '程序过渡点', link: '/aviation/via'}
+                            {text: '程序过渡点', link: '/aviation/via'},
+                            {text: '陆空对话', link: '/aviation/airground'},
                         ]
                     },
                     {
