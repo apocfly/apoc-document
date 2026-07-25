@@ -1,6 +1,4 @@
-Hoppie Acars DCL教程
-
-前言
+# 前言
 
 在模拟飞行联飞过程中，机组通常需要通过语音频率向管制申请离场放行。但在高峰时段，频率拥挤、等待时间较长，或者由于通信质量、语言差异等因素，都可能影响放行效率。
 
@@ -18,9 +16,9 @@ DCL（数字放行）则提供了一种更加高效的方式。它通过ACARS数
 
 通过本教程，你将掌握从准备阶段到完成数字放行的完整操作流程。
 
-1. Hoppie’s ACARS配置
+# 1. Hoppie’s ACARS配置
 
-1.1注册Hoppie’s ACARS账号
+## 1.1注册Hoppie’s ACARS账号
 
 首先进入Hoppie's ACARS页面。（[Hoppie's ACARS Registration](https://www.hoppie.nl/acars/system/register.html)）
 
@@ -44,7 +42,7 @@ DCL（数字放行）则提供了一种更加高效的方式。它通过ACARS数
 
 该代码将在后续飞机插件配置中使用。
 
-1.2配置Hoppie’s ACARS账号
+## 1.2配置Hoppie’s ACARS账号
 
 进入Hoppie’s ACARS网站，点击My ACARS Account。
 
@@ -54,7 +52,7 @@ DCL（数字放行）则提供了一种更加高效的方式。它通过ACARS数
 
 下方Your Network 选择PDAsim并点击Update Network。
 
-1.3在机模中配置ACARS
+## 1.3在机模中配置ACARS
 
 以Fenix为例，开启Fenix外挂软件
 
@@ -65,9 +63,9 @@ DCL（数字放行）则提供了一种更加高效的方式。它通过ACARS数
 * ACARS数据链配置成功
 * 飞机可以使用DCL功能
 
-1. Fenix DCL放行教程
+# 2. Fenix DCL放行教程
 
-2.1开启DCDU
+## 2.1开启DCDU
 
 ![](images/dcl/4.png)
 
@@ -77,7 +75,7 @@ DCL（数字放行）则提供了一种更加高效的方式。它通过ACARS数
 
 开启 **DCDU。**
 
-2.2初始化信息设置
+## 2.2初始化信息设置
 
 完成MCDU INIT页信息输入
 
@@ -107,7 +105,7 @@ FLT INIT
 
 * 使用Simbrief导入FLT INIT
 
-2.3发送DCL申请
+## 2.3发送DCL申请
 
 ![](images/dcl/6.png)
 
@@ -139,7 +137,7 @@ PRE DEP CLRNCE
 
 ![](images/dcl/7.png)
 
-2.4接收管制放行
+## 2.4接收管制放行
 
 等待管制回复：
 
@@ -151,7 +149,7 @@ PRE DEP CLRNCE
 * 阅读放行内容
 * 检查是否可以执行
 
-2.5接受并发送放行
+## 2.5接受并发送放行
 
 ![](images/dcl/8.png)
 
@@ -167,7 +165,7 @@ DCDU：
 
 完成数字放行。
 
-2.6查看历史放行记录
+## 2.6查看历史放行记录
 
 ![](images/dcl/9.png)
 
@@ -181,9 +179,9 @@ MSG RECORD
 
 查看已接收的放行信息。
 
-1. 其余空客机型操作区别
+# 3. 其余空客机型操作区别
 
-3.1Flybywire A32NX
+## 3.1Flybywire A32NX
 
 主要区别：
 
@@ -201,7 +199,7 @@ MCDU中选择：
 
 * 将信息转移至DCDU后发送
 
-3.2iniBuilds A350
+## 3.2iniBuilds A350
 
 DCL入口：
 
@@ -223,7 +221,7 @@ XFR TO MAILBOX
 
 ![](images/dcl/15.png)
 
-3.3Tollis A346
+## 3.3Tollis A346
 
 区别：
 
@@ -243,14 +241,14 @@ FLT INIT输入方式：
 
 点击L1，自动读取Simbrief数据。
 
-1. 注意事项
+# 4. 注意事项
 
-4.1申请放行时机
+## 4.1申请放行时机
 
 * 驾驶舱准备完成后申请DCL
 * 避免过早申请导致运行混乱
 
-4.2保持频率守听
+## 4.2保持频率守听
 
 虽然DCL减少语音交流：
 
@@ -258,7 +256,7 @@ FLT INIT输入方式：
 
 监听管制频率，注意管制呼叫
 
-4.3异常情况处理
+## 4.3异常情况处理
 
 遇到：
 
@@ -270,6 +268,6 @@ FLT INIT输入方式：
 
 转回语音通信，与管制协调
 
-结语
+# 结语
 
 希望通过本教程，能够帮助更多飞友掌握DCL的使用方法，在未来的联飞活动中更加熟练、高效地完成放行流程。
