@@ -1,4 +1,5 @@
 import {defineConfig} from 'vitepress'
+import type {MarkdownItAsync} from "markdown-it-async";
 
 const pageAuthorDefaults = {
     root: {
@@ -46,7 +47,7 @@ export default defineConfig({
     lastUpdated: true,
     markdown: {
         math: true,
-        config(md) {
+        config(md: MarkdownItAsync) {
             md.core.ruler.before('anchor', 'page_author', (state) => {
                 const locale = getPageAuthorLocale(state.env.relativePath)
                 const defaults = pageAuthorDefaults[locale]
