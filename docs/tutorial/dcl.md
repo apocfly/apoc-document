@@ -1,3 +1,7 @@
+---
+author: 7086
+---
+
 # Hoppie ACARS DCL使用教程
 
 ## 前言

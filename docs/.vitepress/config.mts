@@ -1,5 +1,42 @@
 import {defineConfig} from 'vitepress'
 
+const pageAuthorDefaults = {
+    root: {
+        label: '作者'
+    },
+    en: {
+        label: 'Author'
+    }
+}
+
+type PageAuthorLocale = keyof typeof pageAuthorDefaults
+type LocalizedValue = string | string[] | false | Record<string, string | string[] | false>
+
+const escapeHtml = (value: string) =>
+    value.replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;')
+
+const getPageAuthorLocale = (relativePath?: string): PageAuthorLocale => {
+    const firstSegment = relativePath?.split('/')[0] as PageAuthorLocale | undefined
+
+    return firstSegment && firstSegment in pageAuthorDefaults ? firstSegment : 'root'
+}
+
+const getLocalizedValue = (
+    value: LocalizedValue | undefined,
+    locale: PageAuthorLocale,
+    fallback: string | string[] | false
+) => {
+    if (value && typeof value === 'object' && !Array.isArray(value)) {
+        return value[locale] ?? value.root ?? fallback
+    }
+
+    return value ?? fallback
+}
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
     title: "Apoc Document",
@@ -8,7 +45,43 @@ export default defineConfig({
     appearance: true,
     lastUpdated: true,
     markdown: {
-        math: true
+        math: true,
+        config(md) {
+            md.core.ruler.before('anchor', 'page_author', (state) => {
+                const locale = getPageAuthorLocale(state.env.relativePath)
+                const defaults = pageAuthorDefaults[locale]
+                const author = getLocalizedValue(state.env.frontmatter?.author, locale, false)
+
+                if (!author) {
+                    return
+                }
+
+                const authorText = Array.isArray(author) ? author.join(', ') : String(author)
+                const labelText = `${defaults.label}：`
+
+                for (let index = 0; index < state.tokens.length; index++) {
+                    const token = state.tokens[index]
+
+                    if (token.type !== 'heading_open' || token.tag !== 'h1') {
+                        continue
+                    }
+
+                    const closeTokenIndex = index + 2
+
+                    if (state.tokens[closeTokenIndex]?.type !== 'heading_close') {
+                        return
+                    }
+
+                    token.attrJoin('class', 'has-page-title-meta')
+
+                    const authorToken = new state.Token('html_block', '', 0)
+                    authorToken.content = `<div class="page-title-meta"><span class="page-title-author">${escapeHtml(labelText)}${escapeHtml(authorText)}</span></div>\n`
+
+                    state.tokens.splice(closeTokenIndex + 1, 0, authorToken)
+                    return
+                }
+            })
+        }
     },
     themeConfig: {
         logo: "/logo.png",

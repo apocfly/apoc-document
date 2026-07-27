@@ -1,0 +1,25 @@
+.vp-doc .page-title-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 8px 0 32px;
+}
+
+.vp-doc h1.has-page-title-meta {
+  margin-bottom: 0;
+}
+
+.vp-doc .page-title-author {
+  color: var(--vp-c-text-2);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+  .vp-doc .page-title-meta {
+    margin: 8px 0 28px;
+  }
+}
