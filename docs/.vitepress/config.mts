@@ -45,6 +45,7 @@ export default defineConfig({
     ignoreDeadLinks: true,
     appearance: true,
     lastUpdated: true,
+    cleanUrls: true,
     markdown: {
         math: true,
         config(md: MarkdownItAsync) {
