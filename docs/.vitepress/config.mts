@@ -49,6 +49,12 @@ export default defineConfig({
     markdown: {
         math: true,
         config(md: MarkdownItAsync) {
+            const normalizeMathSvg = (value: string) =>
+                value.replace(/viewbox=/g, 'viewBox=')
+
+            const renderInlineMath = md.renderer.rules.math_inline
+            const renderBlockMath = md.renderer.rules.math_block
+
             md.core.ruler.before('anchor', 'page_author', (state) => {
                 const locale = getPageAuthorLocale(state.env.relativePath)
                 const defaults = pageAuthorDefaults[locale]
@@ -83,6 +89,14 @@ export default defineConfig({
                     return
                 }
             })
+
+            if (renderInlineMath) {
+                md.renderer.rules.math_inline = (...args) => normalizeMathSvg(renderInlineMath(...args))
+            }
+
+            if (renderBlockMath) {
+                md.renderer.rules.math_block = (...args) => normalizeMathSvg(renderBlockMath(...args))
+            }
         }
     },
     themeConfig: {
