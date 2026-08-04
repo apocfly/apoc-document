@@ -171,7 +171,8 @@ export default defineConfig({
                             {text: 'AudioClient安装使用教程', link: '/tutorial/audio_client'},
                             {text: '飞行计划提交', link: '/tutorial/flightplan'},
                             {text: '航路查询', link: '/tutorial/route'},
-                            {text: 'Hoppie DCL使用教程', link: '/tutorial/dcl'}
+                            {text: 'Hoppie DCL使用教程', link: '/tutorial/dcl'},
+                            {text: '双人机组协同驾驶教程', link: '/tutorial/copilot'},
                         ]
                     },
                     {
