@@ -78,7 +78,7 @@ author: 7086、0407
 2.  进入 SmartCopilot 设置。
 ![Settings](./images/copilot/image4.png)
 3.  点击 `Start`。
-![Start](./images/copilot/image5.png)
+![Start](./images/copilot/image5.jpg)
 4.  选择 `Master`。
 5.  发送连接代码。
 
@@ -87,10 +87,10 @@ author: 7086、0407
 1.  选择 `Slave`。
 2.  输入连接代码。
 3.  点击 `Join`。
-![Join1](./images/copilot/image6.png)
+![Join1](./images/copilot/image6.jpg)
 
 主控方点击 `Allow` 后完成连接。
-![Allow](./images/copilot/image7.png)
+![Allow](./images/copilot/image7.jpg)
 
 ------------------------------------------------------------------------
 
