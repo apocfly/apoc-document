@@ -1,0 +1,38 @@
+{
+  "redirects": [
+    {
+      "source": "/rvsm",
+      "destination": "/aviation/rvsm",
+      "statusCode": 301
+    },
+    {
+      "source": "/fpl",
+      "destination": "/tutorial/flightplan",
+      "statusCode": 301
+    }
+  ],
+  "headers": [
+    {
+      "source": "/*",
+      "headers": [
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "max-age=7200"
+        }
+      ]
+    },
+    {
+      "source": "/assets/*",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "max-age=604800"
+        }
+      ]
+    }
+  ]
+}
