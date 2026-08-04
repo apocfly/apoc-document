@@ -1,8 +1,11 @@
 ---
-author: 7086、0407
+author:
+    - 7086
+    - '0407'
 ---
 
 # 双人 / 多人机组协同驾驶教程
+
 
 ## 前言
 
@@ -14,7 +17,6 @@ author: 7086、0407
 
 在连接至 APOC 网络前，请提前完成插件测试，并确保熟悉所使用机型。
 
-------------------------------------------------------------------------
 
 ## 1 下载所需文件
 
@@ -22,7 +24,6 @@ author: 7086、0407
 [APOC 下载站](https://file.apocfly.com/)
 请根据所使用的平台下载对应文件。
 
-------------------------------------------------------------------------
 
 ## 2 Microsoft Flight Simulator（MSFS）
 
@@ -31,12 +32,14 @@ author: 7086、0407
 下载：
 [Releases · yury-sch/FsCopilot](https://github.com/yury-sch/FsCopilot/releases)
 `FsCopilot_v1.2.1.zip`
+![下载](./images/copilot/2.1-1-download.png)
 
-解压后进入：
+解压至任意位置，进入：
 
 `FsCopilot_v1.2.1\Community\fscopilot-bridge`
 
 将 `fscopilot-bridge` 文件夹复制至 MSFS 的 `Community` 文件夹。
+![目录](./images/copilot/2.1-2-folder.png)
 
 如需支持更多机型，可前往 FsCopilot 官方网站或官方 Discord 获取更多 Profile：
 
@@ -46,15 +49,14 @@ author: 7086、0407
 ### 2.2 建立连接
 
 1.  启动 `FsCopilot.exe`。
-![启动](./images/copilot/image1.png)
+![启动](./images/copilot/2.2-1-startup.png)
 2.  将左上角 `Client Code` 发送给机组伙伴。
-![Client Code](./images/copilot/image2.png)
+![Client Code](./images/copilot/2.2-2-code.png)
 3.  伙伴输入代码并点击 `Join`。
-![Join](./images/copilot/image3.png)
+![Join](./images/copilot/2.2-3-join.png)
 
 连接成功后即可开始协同飞行。
 
-------------------------------------------------------------------------
 
 ## 3 X-Plane（XP11 / XP12）
 
@@ -63,12 +65,13 @@ author: 7086、0407
 下载：
  [Download ⋆ Sky4Crew](https://sky4crew.com/download/)
 `SmartCopilot-3.3.0`
+![下载1](./images/copilot/3.1-1-download.png)
 
 解压后放入：
 
 `X-Plane 主目录\Resources\plugins`
+![folder](./images/copilot/3.1-2-folder.png)
 
-------------------------------------------------------------------------
 
 ### 3.2 建立连接
 
@@ -76,9 +79,9 @@ author: 7086、0407
 
 1.  打开 X-Plane。
 2.  进入 SmartCopilot 设置。
-![Settings](./images/copilot/image4.png)
+![Settings](./images/copilot/3.2-1-settings.png)
 3.  点击 `Start`。
-![Start](./images/copilot/image5.jpg)
+![Start](./images/copilot/3.2-2-start.jpg)
 4.  选择 `Master`。
 5.  发送连接代码。
 
@@ -87,12 +90,11 @@ author: 7086、0407
 1.  选择 `Slave`。
 2.  输入连接代码。
 3.  点击 `Join`。
-![Join1](./images/copilot/image6.jpg)
+![Join1](./images/copilot/3.2-3-join.jpg)
 
 主控方点击 `Allow` 后完成连接。
-![Allow](./images/copilot/image7.jpg)
+![Allow](./images/copilot/3.2-4-allow.jpg)
 
-------------------------------------------------------------------------
 
 ## 4 注意事项
 
@@ -112,7 +114,6 @@ author: 7086、0407
 | 版本要求 | XP11 与 XP12 不互通，不同 XP12 版本也可能无法连接 |
 | 控制权  | Master 默认拥有控制权                    |
 | 同步内容 | 航路、性能及配载可能不同步                     |
----------- ---------------------------------------------------
 
 ### 4.3 控制权说明 
 
@@ -124,7 +125,8 @@ author: 7086、0407
 - PM（Pilot Monitoring）负责监控、检查以及执行非操纵类操作。
 
 **以下将对不同插件在控制权机制上的差异进行说明：**
-#### FsCopilot
+
+**FsCopilot**
 当某一成员拥有控制权（Take Control为灰色）时，该成员可以操作：
 
 - **油门（Throttle）**
@@ -151,7 +153,8 @@ author: 7086、0407
 - 飞机其他系统状态（如开关、按钮、面板设置等）仍保持双向同步；
 - 建议飞行过程中由固定成员持有控制权，避免频繁切换造成误操作。
 
-#### SmartCopilot
+
+**SmartCopilot**
 拥有控制权的成员可以操作：
 
 - **油门（Throttle）**
@@ -165,11 +168,10 @@ author: 7086、0407
 - 其他同步项目。
 
 当从控方需要操作主要操纵系统时，应通过 `Request` 请求控制权。
-![Request](./images/copilot/image8.png)
+![Request](./images/copilot/4.3-1-request.png)
 由当前主控方通过 `Release` 释放控制权后完成交接。
-![Release](./images/copilot/image9.png)
+![Release](./images/copilot/4.3-2-release.png)
 
-------------------------------------------------------------------------
 
 ## 5 APOC 连线飞行说明
 
@@ -181,33 +183,35 @@ author: 7086、0407
 
 观察员呼号格式：
 
-`主控呼号 + A / B / C`
+`主控呼号 + A-Z 任意大写字母`
 
 示例：
 
 主控：
 
 `CCA7086`
-![主控](./images/copilot/image10.png)
+![主控](./images/copilot/5-1-example1.png)
 
 成员：
 
     CCA7086A
     CCA7086B
     CCA7086C
-![成员](./images/copilot/image11.png)
+![成员](./images/copilot/5-2-example2.png)
 
-------------------------------------------------------------------------
 
 ## 6 活动联飞注意事项
 
-如因协同插件异常导致违反 APOC CoC（Code of Conduct）：
+如因协同插件异常导致违反 APOC CoC（Code of Conduct）第三章：
+
+请参阅：
+
+[APOC 行为准则 第三章-飞行员行为准则](https://docs.apocfly.com/general/coc#%E7%AC%AC%E4%B8%89%E7%AB%A0-%E9%A3%9E%E8%A1%8C%E5%91%98%E8%A1%8C%E4%B8%BA%E5%87%86%E5%88%99)：
 
 > 双方机组成员承担同等责任。
 
 建议正式活动前完成插件连接、控制权切换以及同步测试。
 
-------------------------------------------------------------------------
 
 ## 后记
 
@@ -217,9 +221,9 @@ author: 7086、0407
 
 愿各位飞行员安全飞行，蓝天相伴。
 
-------------------------------------------------------------------------
 
 ## 参考资料
 
--   [FS Copilot — Shared Cockpit for MSFS 2024](https://fscopilot.com/)
--   [Install ⋆ Sky4Crew](https://sky4crew.com/install/)
+[1] [FS Copilot — Shared Cockpit for MSFS 2024](https://fscopilot.com/)
+
+[2] [Install ⋆ Sky4Crew](https://sky4crew.com/install/)
