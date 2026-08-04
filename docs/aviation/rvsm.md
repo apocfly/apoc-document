@@ -19,7 +19,7 @@
 `中国RVSM高度层`正是由国际标准英尺高度层经换算并取整为米制后形成的`固定`对应表。
 
 **RVSM米制飞行高度层转换表**
-![RVSM高度示意](./images/rvsm/1.png)
+![RVSM高度示意](images/rvsm/2-1-rvsm.png)
 > [!NOTE]
 > 图片摘自 [China eAIP ENR 1.7.2](https://www.eaipchina.cn/e-AIP)
 
