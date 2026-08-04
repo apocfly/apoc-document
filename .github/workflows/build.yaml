@@ -28,11 +28,14 @@ jobs:
           node-version: 'lts/Krypton'
           check-latest: true
 
+      - name: Install pnpm
+        run: npm install -g pnpm
+
       - name: Install dependencies
-        run: npm install
+        run: pnpm install --frozen-lockfile
 
       - name: Build
-        run: npm run docs:build
+        run: pnpm run docs:build
 
       - uses: actions/upload-artifact@v7
         with:

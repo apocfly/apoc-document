@@ -16,21 +16,29 @@ Apoc 文档站用于沉淀平台规则、使用教程、航空知识与技术说
 ### 1.1 环境要求
 
 - Node.js 18.0 或更高版本；
-- npm；
+- pnpm；
 - Git。
 
-### 1.2 安装依赖
+如果本地尚未安装 pnpm，可使用 Node.js 自带的 npm 安装：
 
 ```bash
-npm install
+npm install -g pnpm
 ```
 
-CI 当前使用 npm 安装依赖和构建。请优先使用 npm，并保持 `package-lock.json` 与依赖变更一致。
+npm 仅用于安装 pnpm。项目依赖安装、脚本运行和锁文件维护均使用 pnpm。
+
+### 1.2 安装项目依赖
+
+```bash
+pnpm install
+```
+
+CI 当前使用 pnpm 安装依赖和构建。请使用 pnpm，并保持 `pnpm-lock.yaml` 与依赖变更一致。`pnpm-lock.yaml` 是唯一应提交的依赖锁文件；如果临时使用 yarn、npm 或其他包管理器，请勿将其生成的锁文件提交到 Git。
 
 ### 1.3 本地预览
 
 ```bash
-npm run docs:dev
+pnpm run docs:dev
 ```
 
 默认访问地址通常为 `http://localhost:5173`，实际端口以终端输出为准。
@@ -38,7 +46,7 @@ npm run docs:dev
 ### 1.4 构建检查
 
 ```bash
-npm run docs:build
+pnpm run docs:build
 ```
 
 构建产物位于 `docs/.vitepress/dist`。不要提交本地生成的构建产物、缓存文件或临时文件。
@@ -54,7 +62,7 @@ npm run docs:build
 - `docs/about/`：项目说明与贡献指南；
 - `docs/public/`：站点公共静态资源。
 
-新增页面时，请根据主题放入对应目录。如果页面需要出现在导航栏或侧边栏中，请同步修改 `docs/.vitepress/config.mts`。
+新增页面时，请根据主题放入对应目录。如果页面需要出现在导航栏或侧边栏中，请同步修改 `docs/.vitepress/config.mts`。除导航、侧边栏和页面入口相关内容外，不要修改 `docs/.vitepress/config.mts` 中的其他配置。
 
 ## 第三章 写作要求
 
@@ -81,7 +89,7 @@ author: 作者名称
 - 使用简体中文为主，航空术语、软件名称和命令可保留英文；
 - 标题层级从 `#` 开始，按顺序使用 `##`、`###`，不要跳级；
 - 教程页面按步骤组织，知识页面可使用“前言”“概念”“示例”“参考资料”等结构；
-- 命令、文件路径、配置项、缩写和界面字段使用反引号标记，例如 `npm run docs:build`；
+- 命令、文件路径、配置项、缩写和界面字段使用反引号标记，例如 `pnpm run docs:build`；
 - 涉及真实航空法规、程序或数据时，必须写清楚来源；不确定的信息请标注为待确认。
 
 ## 第四章 图片和资料
@@ -124,7 +132,7 @@ Markdown 中优先使用相对路径引用图片，避免依赖容易失效的�
 1. Fork 本仓库并克隆到本地；
 2. 基于 `main` 创建分支，例如 `docs/your-topic`；
 3. 完成修改，并在本地预览页面效果；
-4. 运行 `npm run docs:build`；
+4. 运行 `pnpm run docs:build`；
 5. 提交并推送分支；
 6. 在 GitHub 创建 Pull Request。
 
@@ -142,7 +150,7 @@ chore: adjust vitepress config
 
 - 本次修改的目的和范围；
 - 新增或修改的页面路径；
-- 已执行的检查，例如 `npm run docs:build`；
+- 已执行的检查，例如 `pnpm run docs:build`；
 - 是否新增外部资料引用、图片或附件；
 - 文档开头是否已标明作者；
 - 是否需要维护者重点复核航空知识、法规依据或技术细节。

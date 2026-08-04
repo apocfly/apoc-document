@@ -2,14 +2,16 @@ FROM node:24.17.0-alpine AS builder
 
 WORKDIR /build
 
-COPY package.json .
-COPY package-lock.json .
+RUN npm install -g pnpm
 
-RUN npm install
+COPY package.json .
+COPY pnpm-lock.yaml .
+
+RUN pnpm install --frozen-lockfile
 
 COPY . .
 
-RUN npm run docs:build
+RUN pnpm run docs:build
 
 FROM nginx:1.29.3
 
