@@ -1,5 +1,6 @@
 import {defineConfig} from 'vitepress'
 import type {MarkdownItAsync} from "markdown-it-async";
+import footnote from 'markdown-it-footnote';
 
 const pageAuthorDefaults = {
     root: {
@@ -49,6 +50,7 @@ export default defineConfig({
     markdown: {
         math: true,
         config(md: MarkdownItAsync) {
+            md.use(footnote);
             const normalizeMathSvg = (value: string) =>
                 value.replace(/viewbox=/g, 'viewBox=')
 
