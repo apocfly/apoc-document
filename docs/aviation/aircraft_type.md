@@ -80,7 +80,7 @@ ICAO 在 DOC 8643 中按`最大起飞重量(MTOW)`定义分为`四类`：
 | 轻型自转旋翼机   | `GYRO` |
 | 微型/超轻型直升机 | `UHEL` |
 
-## 参考文献
+## 5. 参考文献
 
 1. [中航材导航技术. 可能是史上最全的飞机分类](https://www.siniswift.com/news/d135.html)
 2. [Wikipedia. Aircraft Approach Category](https://en.wikipedia.org/wiki/Aircraft_approach_category)
