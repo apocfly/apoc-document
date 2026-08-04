@@ -9,6 +9,9 @@ hero:
     - theme: brand
       text: 立刻开始
       link: /general/coc
+    - theme: alt
+      text: 参与编写
+      link: /about/contributing
 
 #features:
 #  - icon: 📋
@@ -19,4 +22,3 @@ hero:
 #    details: 完整的 RESTful API 文档，包含丰富的示例和交互式测试工具，快速集成到您的应用中
 
 ---
-

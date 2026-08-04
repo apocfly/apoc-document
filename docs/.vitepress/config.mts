@@ -154,6 +154,7 @@ export default defineConfig({
                 nav: [
                     {text: '首页', link: '/'},
                     {text: '行为准则', link: '/general/coc'},
+                    {text: '贡献者指南', link: '/about/contributing'}
                 ],
                 sidebar: [
                     {
@@ -193,6 +194,12 @@ export default defineConfig({
                         text: '技术文档',
                         items: [
                             {text: '语音系统概述', link: '/technical/voice'}
+                        ]
+                    },
+                    {
+                        text: '关于本项目',
+                        items: [
+                            {text: '贡献者指南', link: '/about/contributing'}
                         ]
                     }
                 ],
