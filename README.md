@@ -6,99 +6,69 @@
 
 ## 关于项目
 
-**Apocalypse Flyleague (APOCFLY)** 是一个完全开源的模拟飞行平台项目，致力于降低搭建与运营专业模拟飞行环境的技术门槛。
+本项目为官方文档站，集中存放所有用户指南、开发者文档和运维手册。
 
 ### 技术栈
 
-- [VitePress](https://vitepress.dev/) - 现代化静态站点生成器
+- [VitePress](https://vitepress.dev/) - 基于 Vite 的静态站点生成器
 - [Vue 3](https://vuejs.org/) - 渐进式 JavaScript 框架
 - [Markdown](https://www.markdownguide.org/) - 轻量级标记语言
 
 ## 快速开始
 
+以下步骤帮助你在本地快速启动文档站，进行预览或贡献。
+
 ### 前置要求
 
+确保你的环境中已安装以下工具：
+
 - [Node.js](https://nodejs.org/) 18.0 或更高版本
-- [npm](https://www.npmjs.com/) 或 [yarn](https://yarnpkg.com/) 包管理器
+- [pnpm](https://pnpm.io/) 包管理器 (或任意包管理工具如yarn)
 - [Git](https://git-scm.com/) 版本控制系统
+
+如果本地尚未安装 pnpm，可使用 Node.js 自带的 npm 安装：
+
+```bash
+npm install -g pnpm
+```
 
 ### 克隆仓库
 
 ```bash
-git clone https://github.com/your-org/apoc-docs.git
-cd apoc-docs
+git clone https://github.com/your-org/apoc-document.git
+cd apoc-document
 ```
 
 ### 安装依赖
 
 ```bash
-npm install
-# 或使用 yarn
-yarn install
+pnpm install
 ```
 
 ### 本地开发
 
-启动本地开发服务器（支持热重载）：
+启动本地开发服务器：
 
 ```bash
-npm run docs:dev
+pnpm run docs:dev
 ```
 
-服务器启动后，访问 [http://localhost:5173](http://localhost:5173) 查看文档站点。
+启动后，在浏览器中访问[http://localhost:5173](http://localhost:5173)即可实时预览文档。
 
 ### 构建生产版本
 
 ```bash
-npm run docs:build
+pnpm run docs:build
 ```
 
-构建产物将输出到 `docs/.vitepress/dist` 目录。
+构建产物将输出到 `docs/.vitepress/dist` 目录，可用于部署。
 
-## 维护团队
+## CI/CD
 
-**当前维护者：**
-
-- [@half-nothing](https://github.com/half-nothing) - 项目负责人
-
-### 历史贡献者
-
-感谢以下成员曾为项目付出的心血：
-
-- [@Master_Gui](https://github.com/supermastergui)
-- [@XiaoZhang-store](https://github.com/XiaoZhang-store)
-
-## 参与贡献
-
-我们热烈欢迎社区贡献！无论是修复错误、改进文档还是提出新想法，您的参与都将推动项目发展。
-
-### 贡献流程
-
-1. **Fork 本仓库** - 点击右上角 Fork 按钮
-2. **克隆到本地** - `git clone https://github.com/your-username/apoc-docs.git`
-3. **创建特性分支** - `git checkout -b feature/your-feature-name`
-4. **提交更改** - `git commit -m 'feat: add some feature'`
-5. **推送到远程** - `git push origin feature/your-feature-name`
-6. **提交 Pull Request** - 在 GitHub 上创建 PR
-
-### 提交规范
-
-我们遵循 [Conventional Commits](https://www.conventionalcommits.org/) 规范：
-
-- `feat`: 新增功能
-- `fix`: 修复问题
-- `docs`: 文档更新
-- `style`: 代码格式调整
-- `refactor`: 代码重构
-- `test`: 测试相关
-- `chore`: 构建/工具链更新
-
-### 贡献建议
-
-- 提交前请运行 `npm run docs:dev` 确保文档能正常构建
-- 保持文档内容简洁清晰，遵循既有风格
-- 大型改动建议先开 Issue 讨论
-- 尊重社区行为准则，友好交流
+| 分支	       | 部署地址                                                       | 	用途 |
+|:----------|:-----------------------------------------------------------|:----|
+| `main`    | [https://predocs.apocfly.com](https://predocs.apocfly.com) | 预览版 |
+| `release` | [https://docs.apocfly.com](https://docs.apocfly.com)       | 正式版 |
 
 ## 许可证
 
@@ -117,6 +87,19 @@ npm run docs:build
 - **没有附加限制** — 您不得适用法律术语或者技术措施从而限制其他人做许可协议允许的事情。
 
 完整许可协议请参见：[CC BY-NC-SA 4.0 中文版][CC-BY-NC-SA-4]
+
+## 项目贡献者
+
+![](https://contrib.rocks/image?repo=apocfly/apoc-document)
+
+我们欢迎每一位贡献者！如果你希望参与文档编写、功能改进或问题反馈，请查阅[贡献指南](./CONTRIBUTING.md)。
+
+## 特别鸣谢
+
+感谢以下成员曾为项目付出的心血：
+
+- [@Master_Gui](https://github.com/supermastergui)
+- [@XiaoZhang-store](https://github.com/XiaoZhang-store)
 
 ---
 
