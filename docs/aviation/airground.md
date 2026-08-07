@@ -148,9 +148,8 @@
 
 ## 9. 速度的读法
 
-汉语读法：`马赫数点 + XX`、`马赫数 + X + 点 + XX`、`表速 + XX + 节`。
-
-英语读法：`MACH NUMBER POINT + XX`、`MACH NUMBER + X + POINT + XX`、`(INDICATE) SPEED + X + knots`。
+- `马赫数点 + XX`、`马赫数 + X + 点 + XX`、`表速 + XX + 节`。
+- `MACH NUMBER POINT + XX`、`MACH NUMBER + X + POINT + XX`、`(INDICATE) SPEED + X + knots`。
 
 > [!CAUTION]
 > 根据《民用航空空中交通管理规则》第一百六十四条有关规定，应当在7500米（不含）以上使用马赫数，在7500米（含）及以下使用表数（指示空速）。
@@ -175,9 +174,8 @@
 
 ## 11. VOR和NDB的读法
 
-汉语读法：`LKO`读作`龙口`（该台的中文名，eAIP的附录中包含）。
-
-英语读法：`LKO`读作`LIMA KILO OSCAR`（逐一读出字母）
+- `LKO`读作`龙口`（该台的中文名，eAIP的附录中包含）。
+- `LKO`读作`LIMA KILO OSCAR`（逐一读出字母）
 
 ## 12. 航点的读法
 
@@ -223,117 +221,91 @@
 | WILCO                        | 照办                     |
 | WORDS TWICE                  | 讲两遍                    |
 
-### 字母和数字组合的读法
+## 14. 航空器型号的读法
 
-#### 航空器型号的读法
+`A320`读作`空客三二零`，英文读作`Airbus tree two zero`
+`B738`读作`波音七三八`或者`波音七三七减八百`，也可以读作`Boeing seven tree eight dash eight`
 
-这里将不再使用正常情况下无线电的数字读法，而是使用直接读出的方式。
+> [!TIP]
+> “-”在航空领域通常读作“减”，而并非“杠”。
 
-A320，读作：A-320；
+## 15. 航空器呼号的读法
 
-B738，读作：B738 或 B737 - 800。
+### 15.1 大部分通航呼号读法
 
-> [!Note]
->
->“-”在航空领域通常读作“减”，而并非“杠”。
+假设航空器驾驶员驾驶着塞斯纳飞机，注册号为：G-ABCD
 
-#### 航空器呼号的读法
+1. 按部就班的每个字母读, `G-ABCD`读作`GOLF ALPHA BRAVO CHARLIE DELTA`
+2. 在建立`满意的双向稳定通讯`后，可适当缩减为`G-CD`读作`GOLF CHARLIE DELTA`
 
-本质上航空领域的无线电和业余无线电的部分内容 **高度相似**，呼号这部分也基本类似，但需要注意一些简略和缩写方式。
+> [!CAUTION]
+> 缩写为航空器注册号的第一个字母加至少最后2个字母  
+> 且只有管制单位缩减了呼号后，航空器才可使用缩减后的呼号
 
-##### 标准读法
+### 15.2 商业航班呼号读法
 
-###### 大部分通航呼号读法
+假设航空器驾驶员经营的无线电呼号为：CES，注册号为：B-ABCD，飞行航班号为：2352
 
-航空器驾驶员驾驶着塞斯纳飞机制造商，注册号为：G-ABCD时，有以下两种方式：
+1. **航空器驾驶员经营的无线电呼号+飞机后四位注册号**：`CES ABCD`，读作：
+    - `东方 ALPHA BRAVO CHARLIE DELTA`
+    - `China Eastern ALPHA BRAVO CHARLIE DELTA`
+2. **航空器驾驶员经营的无线电呼号+飞机航班号**：`CES2352`，读作：
+    - `东方两三五两`
+    - `China Eastern two tree five two`
+3. 在建立**满意的双向稳定通讯**后，可适当缩减为**航空器经营人的无线电呼号+航空器的注册号至少最后两个字母**：`CES CD`，读作：
+    - `东方 CHARLIE DELTA`
+    - `China EasternCHARLIE DELTA`
 
-> [!Note]
->
->飞机制造商的名称可读可不读，下同。
+> [!TIP]
+> **航空器驾驶员经营的无线电呼号+飞机航班号**的读法无法省略  
+> 即`CES2352`不能被省略为`CES23`
 
-- 第一种
+### 15.3 重型飞机和超大型飞机呼号读法
 
-  按部就班的每个字母读
+与通航和商业航班读法大致相同，唯一不同的地方是:
 
-    - 汉语&英语读法读法：G-ABCD，读作：GOLF ALPHA BRAVO CHARLIE DELTA
-    - 汉语&英语读法读法：C G-ABCD，读作：塞斯纳（Cessna）GOLF ALPHA BRAVO CHARLIE DELTA
+- 重型飞机需在**首次呼叫管制单位时**，呼号后加入：重型（HEAVY）
+- 超大型飞机（A380）需在**首次呼叫管制单位时**，呼号后加入：SUPER（SUPER）
 
-- 第二种
+## 16. 管制单位呼号的读法
 
-  在建立满意的双向稳定通讯后，可适当缩减：
+| 管制单位或服务                                      | 后缀汉语简呼 | 后缀英语简呼          |
+|:---------------------------------------------|:-------|:----------------|
+| 区域管制中心 (Area control centre)                 | **区域** | **CONTROL**     |
+| 进近管制 (Approach control)                      | **进近** | **APPROACH**    |
+| 进场雷达管制 (Approach control radar arrival)      | **进场** | **ARRIVAL**     |
+| 离场雷达管制 (Approach control radar departure)    | **离场** | **DEPARTURE**   |
+| 机场管制 (Aerodrome control)                     | **塔台** | **TOWER**       |
+| 地面活动管制 (Surface movement control)            | **地面** | **GROUND**      |
+| 放行许可发布 (Clearance delivery)                  | **放行** | **DELIVERY**    |
+| 飞行服务/航空情报服务 (Flight information service)     | **飞服** | **INFORMATION** |
+| 精密进近雷达管制 (Precision approach radar)          | **精密** | **PRECISION**   |
+| 机坪管制/管理服务 (Apron control/management service) | **机坪** | **APRON**       |
+| 公司签派 (Company dispatch)                      | **签派** | **DISPATCH**    |
+| 航空电台 (Aeronautical station)                  | **电台** | **RADIO**       |
+| 五边监控席 (Final approach radar monitoring)      | **五边** | **FINAL**       |
 
-    - 航空器注册号的第一个字母加至少最后2个字母：C G-CD，读作：[塞斯纳（Cessna）] GOLF CHARLIE DELTA
+## 17. 常用句式
 
-> [!Note]
->
->只有管制单位缩减了呼号后，航空器才可使用缩减后的呼号。
+### 17.1 证实哪位叫
 
-###### 大商业航班呼号读法
+- “哪个呼叫”+管制单位，“重复一遍你的呼号”
+- “STATION CALLING” + (ATC unit), “SAY AGAIN YOUR CALL SIGN”
 
-这里指的商业航班分类标准是以拥有航空器经营人的无线电呼号作为分类标准
-
-航空器驾驶员经营的无线电呼号为：CCA，飞行航班号为：1234，飞机注册号为：B-ABCD
-
-- 第一种
-
-    - 航空器驾驶员经营的无线电呼号+飞机后四位注册号：CCA ABCD，读作：国际/国航（Air China）ALPHA BRAVO CHARLIE DELTA
-    - 航空器驾驶员经营的无线电呼号+飞机航班号：CCA 1234，读作：国际/国航（Air China）ONE TWO THREE FOUR
-
-- 第二种
-
-  上同，在建立满意的双向稳定通讯后，可适当缩减
-
-    - 航空器经营人的无线电呼号+航空器的注册号中和至少最后两个字母：CCA CD，读作：国际/国航（Air China）CHARLIE DELTA
-
-> [!Note]
->
->采用飞机航班号的读法无省略。
-
-###### 重型飞机和超大型飞机呼号读法
-
-参考通航和商业航班读法，根据其尾流等级分为：H、S两类
-
-重型飞机需在**首次呼叫管制单位时**，呼号后加入：重型（HEAVY）；超大型飞机（A380）需在**首次呼叫管制单位时**，呼号后加入：SUPER（SUPER）
-
-#### 管制单位呼号的读法
-
-| 管制单位或服务                                     | 汉语简称 | 后缀英语简称      |
-|---------------------------------------------|------|-------------|
-| 区域管制中心 （Area control center）                | 区域   | CONTROL     |
-| 进近管制 （Approach control）                     | 进近   | APPROACH    |
-| 离场雷达管制 （Approach control radar departure）   | 离场   | DEPARTURE   |
-| 机场管制 （Aerodrome control）                    | 塔台   | TOWER       |
-| 地面活动管制 （Surface movement control）           | 地面   | GROUND      |
-| 放行许可发布 （Clearance delivery）                 | 放行   | DELIVERY    |
-| 机坪管制/管理服务（Apron control/management service） | 机坪   | APRON       |
-| 飞行服务/航空情报服务（Flight information service）     | 飞服   | INFORMATION |
-| 航空电台 （Aeronautical station）                 | 电台   | RADIO       |
-| 五边监控席 （Final approach radar monitoring）     | 五边   | FINAL       |
-
-### 常用句式
-
-##### 证实哪位叫
-
-“哪个呼叫”+管制单位，“重复一遍你的呼号”
-
-“STATION CALLING” + (ATC unit), “SAY AGAIN YOUR CALL SIGN”
-
-##### 保持联系
+### 17.2 保持联系
 
 - 我将与你保持联系。
-
-  I will keep you advised.
+- I will keep you advised.
 
 - 与我（我们）保持联系。
+- Keep me (us) advised.
 
-  Keep me (us) advised.
-
-##### 无线电测试
+### 17.3 无线电测试
 
 - 你听我几个？
-  HOW DO YOU READ?
+- HOW DO YOU READ?
 - “听你”+数字+“个”
-  “I READ YOU (or READABILITY)” + number
+- “I READ YOU (or READABILITY)” + number
 
 | 信号质量                                    | 汉语读法 | 英语读法   |
 |-----------------------------------------|------|--------|
@@ -343,545 +315,528 @@ B738，读作：B738 或 B737 - 800。
 | 清楚（4） Readable                          | 四个   | FOW-er |
 | 非常清晰（5） Perfectly readable              | 五个   | FIFE   |
 
-> [!Note]
->
->此表应是每一位飞行员、管制员需记忆的内容
+> [!IMPORTANT]
+> 此表应是每一位飞行员、管制员需记忆的内容
 
-##### 移交及转换频率
+### 17.4 移交及转换频率
 
 - 航空器呼号+“联系”+管制单位呼号+频率
-
-  aircraft call sign + “CONTACT” + ATC call sign + (“ON”) + frequency
+- aircraft call sign + “CONTACT” + ATC call sign + (“ON”) + frequency
 
 - “在”+时间+“联系”+单位呼号+频率；
-
-  “AT” + time + “CONTACT” + ATC call sign + (“ON”) + frequency
+- “AT” + time + “CONTACT” + ATC call sign + (“ON”) + frequency
 
 - “过”+地点+“联系”+单位呼号+频率；
-
-  “OVER” + location + “CONTACT” + ATC call sign + (“ON”) + frequency
+- “OVER” + location + “CONTACT” + ATC call sign + (“ON”) + frequency
 
 - “如果联系不上”+管制指令
-
-  “IF NOT CONTACT” + ATC instructions
+- “IF NOT CONTACT” + ATC instructions
 
 - 航空器呼号+“转频到”+单位呼号+频率数值+“守听”
-
-  aircraft call sign + “STAND BY FOR” + ATC call sign + (“ON”) + frequency
+- aircraft call sign + “STAND BY FOR” + ATC call sign + (“ON”) + frequency
 
 - 管制单位呼号+航空器呼号+“申请转换频率”+频率数值
-
-  ATC call sign + aircraft call sign + “REQUEST CHANGE TO” + frequency
+- ATC call sign + aircraft call sign + “REQUEST CHANGE TO” + frequency
 
 - 航空器呼号+（管制单位呼号）+“同意转换频率”
-
-  aircraft call sign + (ATC call sign) + “FREQUENCY CHANGE APPROVED”
+- aircraft call sign + (ATC call sign) + “FREQUENCY CHANGE APPROVED”
 
 - 航空器呼号+（管制单位呼号）+“当前频率保持长守
-
-  aircraft call sign + (ATC call sign) + “REMAIN THIS FREQUENCY”
+- aircraft call sign + (ATC call sign) + “REMAIN THIS FREQUENCY”
 
 - 航空器呼号+管制单位呼号+“守听”+（管制单位呼号）+频率数值
+- aircraft call sign + ATC call sign+ “MONITOR” + (ATC call sign) + frequency
 
-  aircraft call sign + ATC call sign+ “MONITOR” + (ATC call sign) + frequency
-
-### 基本通话用语
+## 18. 基本通话用语
 
 以下文本中的所有内容，将会以示例的形式，而非单出拆分。
 
-在以下内容中，一句话同样含义的话通常有多种表达句式。在此，我们受限于篇幅限制，我们没有办法一一列举出来。如果在本章节以外的用语，需判断正确时，请翻阅以下链接中的文件：
+在以下内容中，一句话同样含义的话通常有多种表达句式。
+在此，我们受限于篇幅限制，我们没有办法一一列举出来。
+如果在本章节以外的用语，需判断正确时，请翻阅以下链接中的文件：
 
 1. [CAAC.空中交通无线电通话用语（第四次征求意见版V79）](./References/空中交通无线电通话用语（第四次征求意见版V79）.pdf)；
-
 2. [CAAC.MH/T 4014-2003.空中交通无线电通话用语](https://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/201511/P020170804579259214829.pdf)；
 
-这里以ZSPD（上海浦东）-ZBAA（北京首都）的东方航空（CES）5101航班为例，巡航高度：34100ft，航路：
+这里以上海浦东-北京首都的东方航空5101航班为例，巡航高度：34100ft，航路：`POMOK G330 PIMOL A593 DALIM W157 AVBOX`
 
-```
-(ZSPD-ZBAA-01)  POMOK G330 PIMOL A593 DALIM W157 AVBOX
-```
+> [!TIP]
+> 由于导航数据时效性，示例内容仅供参考
 
-> [!Note]
+### 18.1 申请放行
+
+联系席位：XXXX_DEL、XXXX_GND、XXXX_TWR、XXXX_APP、XXXX_CTR（低位席位优先）
+
+> [!IMPORTANT]
+> 机坪席位（即RMP/A_GND，例如ZSPD_RMP/ZSPD_A_GND）不提供放行服务
+
+飞行员:
+
+- 浦东放行，东方5155，停机位114，通播Alpha抄收，申请放行至北京首都。
+- Pudong Delivery, China Eastern 5155, gate 114, with information Alpha, request IFR clearance to Beijing Capital.
+
+> [!NOTE]
+> Gate指：廊桥；Stand指：远机位。
+
+管制员:
+
+- 东方5155，放行(排)第一个，稍等
+- CES5155, you are number one, please stand by(STBY).
+
+管制员:
+
+- 东方5155，浦东放行。
+- CES5155, Pudong Delivery.
+
+飞行员:
+
+- 请讲，东方5155。
+- Go ahead, CES5155.
+
+管制员:
+
+- 东方5155，可以沿飞行计划航路放行到北京首都，[通播A有效]，沿PIKAS-95D（标准程序）离场，使用跑道35R，巡航高度层10400m(
+  FL341)，起始高度900米，[(终端区)修正海压1013（ATIS存在后，可不念）]，应答机5033，离地后联系进近126.650。
+- CES5155, cleared to Beijing Capital via flight planned route, [information Alpha is available], (
+  follow) PIKAS-95D departure, runway (in use) 35R, cruising level 10,400m, initial altitude
+  900m [on (Shanghai terminal) QNH1013], squawk 5033, departure frequency 126.650.
+
+飞行员:
+
+- 可以沿飞行计划航路放行到北京首都，沿PIKAS-95D（标准程序）离场，使用跑道35R，[巡航高度层10400m(FL341)]
+  ，起始高度900米，[(终端区)修正海压1013（ATIS存在后，可不念）]，应答机5033，离地后联系进近126.650，东方5155。
+- Cleared to Beijing Capital via flight planned route, (follow) PIKAS-95D departure, Runway in use 35R, cruising level
+  10,400m, Initial altitude 900m [on (Shanghai terminal) QNH1013], Squawk 5033, Departure frequency 126.650, CES5155.
+
+管制员:
+
+- 东方5155，复述正确，准备好报。
+- CES5155, readback correct, call/report when ready [for push(back) and start(up)].
+
+飞行员:
+
+- 准备好报，东方5155。
+- Call when ready, CES5155.
+
+### 18.2 推出开车
+
+飞行员:
+
+- 浦东放行，东方5155，准备好推出开车。
+- Pudong Delivery, CES5155, ready for pushback and startup.
+
+管制员:
+
+- 东方5155，联系浦东地面121.700。
+- CES5155, contact Pudong Ground on 121.700.
+
+飞行员:
+
+- 联系浦东地面121.700，东方5155。
+- Contact Pudong Ground on 121.700, CES5155.
+
+飞行员:
+
+- 浦东地面，东方5155，停机位114，申请推出开车。
+- Pudong Ground, CES5155, Gate 114, request pushback and startup.
+
+管制员:
+
+- 东方5155，同意推出开车，跑道35R，（头朝向南）。
+- CES5155, Pushback and startup approved, runway 35R, (facing south).
+
+飞行员:
+
+- 可以退出开车，跑道35R，（头朝向南），东方5155
+- Pushback and startup approved, runway 35R, (facing south), CES5155.
+
+> [!NOTE] 如果周围存在交通
+> 管制员:
+> - 东方5155，稍等推出，地面有交通。
+> - CES5155, stand by for pushback due to the traffic.
 >
->如果您不知道如何查询航路，可以[点此](../tutorial/flightplan.md)查阅教程。
+> 飞行员:
+> - 稍等推出，东方5155。
+> - Stand by for pushback, CES5155.
 
-#### 放行(DEL)
+### 18.3 滑行
 
-频道选择：DEL、RMP(A_GND)、GND、TWR、APP、CTR（低位席位优先）
+飞行员:
 
-> [!Note]
+- 浦东地面，东方5155，L02，申请滑行。
+- Pudong Ground, CES5155, at L02, request taxi.
+
+管制员:
+
+- 东方5155，沿L02，L19。在B外等待。
+- CES5155, taxi via L02, L19. hold short of B.
+
+飞行员:
+
+- 沿L02，L19。在B外等待, 东方5155。
+- Taxi via L02, L19. hold short of B, CES5155
+
+### 18.4 短跑道起飞
+
+管制员:
+
+- 东方5515，跑道35R，B1非全跑道离场，可用起飞距离3780米，能否接受？
+- CES5155, advise able to intersection B1 for departure from runway 35R, 3780m available.
+
+飞行员:
+
+- 接受，东方5515。
+- Accept, CES5155.
+
+管制员:
+
+- 东方5155，继续滑行沿B B1，跑道35R外等。
+- CES5155, Continue taxi via B B1, hold short of runway 35R.
+
+飞行员:
+
+- 继续滑行沿B B1，跑道35R外等，东方5155。
+- Continue taxi via B B1, hold short of runway 35R, CES5155.
+
+管制员:
+
+- 东方5155，联系浦东塔台118.800。
+- CES5155, contact Pudong Tower 118.800.
+
+飞行员:
+
+- 塔台118.800，东方5155。
+- Contact Pudong Tower 118.800, CES5155.
+
+### 18.5 起飞
+
+飞行员:
+
+- 浦东塔台，东方5155，B1，35R外等。
+- Pudong Tower, CES5155, hold short of runway 35R at holding point B1.
+
+管制员:
+
+- 东方5155，(目视前机A321离地后)，进跑道35R等待。
+- CES5155, (behind A321 airborne)，runway 35R, line up and wait.
+
+飞行员:
+
+- (目视前机A321离地后)，进跑道35R等待，东方5155。
+- (behind A321 airborne), line up (behind) and wait, runway 35R, CES5155.
+
+管制员:
+
+- 东方5155，地面风190，2米/秒，（修正海压1017），跑道35R，可用起飞距离3780米，可以起飞。
+- CES5155, surface wind 190 degrees, 2 meters per second, runway 35R, 3780m available, cleared for take-off.
+
+飞行员:
+
+- 跑道35R，可以起飞，东方5155。
+- Runway 35R, cleared for take-off, CES5155.
+
+飞行员:
+
+- 离地了，东方5155。
+- airborne, CES5155.
+
+管制员:
+
+- 东方5155，联系上海进近120.300。
+- CES5155, contact Shanghai Approach 120.300.
+
+飞行员:
+
+- 联系上海进近120.300，东方5155。
+- Contact Shanghai Approach 120.300, CES5155.
+
+### 18.6 离场
+
+飞行员:
+
+- 上海进近，东方5515，浦东跑道35R离地，通过300，上900，应答机5033。
+- Shanghai Approach, CES5515, pudong runway 35R airborne, passing 300m to 900m, squawk 5033.
+
+管制员:
+
+- 东方5515，上海进近，雷达识别了，程序离港，上到修正海压3000，修正海压1017。
+- CES5515, Shanghai Approach, radar identified, follow SID, climb and maintain 3000 on QNH1017.
+
+飞行员:
+
+- 程序离港，上到修正海压3000，修正海压1017，东方5515.
+- Follow SID, climb and maintain 3000 on QNH1017, CES5515.
+
+管制员:
+
+- 东方5155，证实当前表速。
+- CES5155, report/confirm your indicated speed.
+
+飞行员:
+
+- 表速250，东方5155。
+- Speed 250 knots, CES5155.
+
+管制员:
+
+- 东方5515，由于间隔，减表速200。
+- CES5515, reduce speed to 200 knots.
+
+飞行员:
+
+- 减表速200，东方5155。
+- reduce speed to 200 knots, CES5515.
+
+管制员:
+
+- 东方5515，继续上到标准气压6000。
+- CES5515, continue climb and maintain 6000m on standard.
+
+飞行员:
+
+- 上标准气压6000，东方5515。
+- Climb and maintain 6000m on standard, CES5515.
+
+管制员:
+
+- 东方5155，联系上海124.550。
+- CES5515, contact Shanghai 124.550.
+
+飞行员:
+
+- 联系上海124.550，东方5155。
+- Contact Shanghai 124.550, CES5155.
+
+### 18.7 区域
+
+飞行员:
+
+- 上海，东方5155，保持6000，应答机5033。
+- Shanghai, CES5155, maintain 6000m, squawk 5033.
+
+管制员:
+
+- 东方5155，上海雷达识别了，上到标准气压104，自主领航。
+- CES5155, Shanghai radar identified, climb and maintain 10,400m, own navigate.
+
+飞行员:
+
+- 上到标准气压104，自主领航，东方5155。
+- Climb and maintain 10,400m, own navigate, CES5155.
+
+管制员:
+
+- 东方5155，联系北京125.900。
+- CES5155, contact Beijing 125.900.
+
+飞行员:
+
+- 联系北京125.900，东方5155.
+- Contact Beijing 125.900, CES5155.
+
+飞行员:
+
+- 北京，东方5155，保持104, 应答机 5033。
+- Beijing, CES5155, maintain 10,400m, squawk 5033.
+
+管制员:
+
+- 东方5155，北京，应答机 4100。
+- CES5155, Beijing, squawk 4100.
+
+飞行员:
+
+- 应答机 4100，东方5155。
+- Squawk 4100, CES5155.
+
+管制员:
+
+- 东方5155，北京雷达识别了。
+- CES5155, Beijing radar identified.
+
+飞行员:
+
+- 东方5155。
+- CES5155.
+
+> [!TIP] 偏置
+> 管制员:
+> - 东方5155，证实你们有偏置能力。
+> - CES5155, confirm you have offset capability.
 >
->机坪席位（即RMP/A_GND，例如ZSPD_RMP/ZSPD_A_GND）不提供放行服务；
-
----
-
-##### 放行
-
-P: 浦东放行，东方5155，停机位114，通播Alpha抄收，申请放行至北京首都。
-
-> Pudong Delivery, China Eastern 5155, Gate 114, with information Alpha, request IFR clearance to Beijing Capital.
-
-> [!Note]
+> 飞行员:
+> - 是，东方5155。
+> - Affirm, CES5155.
 >
->Gate指：廊桥；而，Stand指：远机位。
+> 管制员:
+> - 东方5155，左偏置5海里。
+> - CES5155, offset 5nm left of track.
+>
+> 飞行员:
+> - 左偏置5海里，东方5155。
+> - Offset 5nm left of track, CES5155.
 
-A: 东方5155，放行(排)第一个，稍等
+> [!TIP] 雷达引导偏置
+> 管制员:
+> - 东方5155，证实你们有偏置能力。
+> - CES5155, confirm you have offset capability.
+>
+> 飞行员:
+> - 没有，东方5155。
+> - Negative, CES5155.
+>
+> 管制员:
+> - 雷达引导偏置，左转航向020。
+> - Radar vector offset, turn left heading 020.
 
-> CES5155, You are number one, please Stand by(STBY).
+管制员:
 
-A: 东方5155，浦东放行。
+- 东方5155，下到标准气压5400。
+- CES5155, descend and maintain 5400m on standard.
 
-> CES5155, Pudong Delivery.
+飞行员:
 
-P: 请讲，东方5155。
+- 下标准气压5400，东方5155.
+- Descend and maintain 5400m on standard, CES5155.
 
-> Go ahead, CES5155.
+管制员:
 
-A: 东方5155，浦东放行，可以沿飞行计划航路放行到北京首都，[通播A有效]
-，沿PIKAS-95D（PIK95D）（标准程序）离场，使用跑道35R，巡航高度层10400m(FL341)
-，起始高度900米，[(终端区)修正海压1013（ATIS存在后，可不念）]，应答机5033，离地后联系进近126.650。
+- 东方5155，预计沿AVBOX-7X进场，盲降跑道36L。
+- CES5155, Expect follow AVBOX-7X arrival, ILS approach runway 36L.
 
-> CES5155, Pudong Delivery, Cleared to Beijing Capital via flight planned route, [information Alpha is available], (
-> follow) PIKAS-95D departure, Runway (in use) 35R, Cruising level 10,400m, Initial altitude
-> 900m [on (Shanghai terminal) QNH1013], squawk 5033, departure frequency 126.650.
+飞行员:
 
-P: 可以沿飞行计划航路放行到北京首都，沿PIKAS-95D（PIK95D）（标准程序）离场，使用跑道35R，[巡航高度层10400m(FL341)]
-，起始高度900米，[(终端区)修正海压1013（ATIS存在后，可不念）]，应答机5033，离地后联系进近126.650，东方5155。
+- 预计沿AVBOX-7X进场，盲降跑道36L，东方5155
+- Expect follow AVBOX-7X arrival, ILS approach runway 36L, CES5155
 
-> Cleared to Beijing Capital via flight planned route, (follow) PIKAS-95D departure, Eunway in use 35R, cruising level
-> 10,400m, Initial altitude 900m [on (Shanghai terminal) QNH1013], Squawk 5033, Departure frequency 126.650, CES5155.
+管制员:
 
-A: 东方5155，复述正确，准备好报。
+- 东方5155，联系北京进近120.600。
+- CES5155, contact Beijing Approach 120.600.
 
-> CES5155, Readback correct, Call/report when ready [for push(back) and start(up)].
+飞行员:
 
-P: 准备好报，东方5155。
+- 联系北京进近120.600，东方5155。
+- Contact Beijing Approach 120.600, CES5155.
 
-> Call when ready, CES5155.
+### 18.8 进场
 
----
+飞行员:
 
-###### 复述错误
+- 北京进近，东方5155，当前在AVBOX，保持5400, 应答机 4100
+- Beijing Approach, CES5155, now at AVBOX maintain 5400m, squawk 4100
 
-A: 东方5155，不正确，应答机5033（假设应答机复述错误）。
+管制员:
 
-> CES5155, Negative, Squawk 5033.
+- 东方5155，北京进近，雷达识别了，沿AVBOX-7X进场，盲降跑道36R。
+- CES5155, Beijing Approach, radar identified, follow AVBOX-7X arrival, ILS approach runway 36R.
 
-P: 应答机5033，东方5155。
+飞行员:
 
-> Squawk 5033, CES5155.
+- 沿AVBOX-7X进场，盲降跑道36L，东方5155。
+- Follow AVBOX-7X arrival, ILS approach runway 36L, CES5155.
 
----
+管制员:
 
-#### 地面(GND)
+- 东方5155，下到4200保持。
+- CES5155, descend and maintain 4200m.
 
-##### 推出、开车
+飞行员:
 
-P: 浦东放行，东方5155，准备好推出开车。
+- 下4200保持，东方5155。
+- Descend and maintain 4200m, CES5155.
 
-> Hongqiao Delivery, CES5155, Ready for pushback and startup.
+管制员:
 
-A: 东方5155，联系浦东地面121.700。
+- 东方5155，下到修正海压2400保持，修正海压1029。
+- CES5155, descend and maintain 2400m on QNH1029.
 
-> CES5155, Contact Pudong Ground on 121.700.
+飞行员:
 
-P: 联系浦东地面121.700，再见，东方5155。
+- 下到修正海压2400，修正海压1029，东方5155。
+- Descend and maintain 2400m on QNH1029, CES5155.
 
-> Contact Pudong Ground on 121.700, goodbye, CES5155.
+管制员:
 
-P: 浦东地面，东方5155，停机位114，申请推出开车。
+- 东方5155，下到1800保持。
+- CES5155, descend and maintain 1800m.
 
-> Pudong Ground, CES5155, Gate 114, request pushback and startup.
+飞行员:
 
-A: 东方5155，同意推出开车，跑道35R，（头朝向南）。
+- 下1800保持，东方5155。
+- Descend and maintain 1800m, CES5155.
 
-> CES5155, Pushback and startup approved, runway 35R, (facing south).
+管制员:
 
-P: 可以退出开车，跑道35R，（头朝向南），东方5155
+- 东方5155，（跟程序），建立跑道36L盲降，航向道建立报。
+- CES5155, (follow STAR), clear for ILS approach runway 36L, report localizer established.
 
-> Pushback and startup approved, runway 35R, (facing south), CES5155.
+飞行员:
+-（跟程序），建立跑道36L盲降，航向道建立报，东方5155。
 
----
+- (Follow STAR), clear for ILS approach runway 36L, report localizer established, CES5155.
 
-###### 有交通情况
+### 18.9 盲降建立
 
-A: 东方5155，稍等推出，地面有交通。
+飞行员:
 
-> CES5155, Stand by for pushback due to the traffic.
+- 跑道36L，航向道建立了，东方5155.
+- Runway 36L, localizer established, CES5155.
 
-P: 稍等推出，东方5155。
+管制员:
 
-> Stand by for pushback, CES5155.
+- 东方5155，雷达服务终止，联系塔台118.300。
+- CES5155, radar service termindated, contact Tower 118.300.
 
----
+飞行员:
 
-##### 滑行
+- 联系塔台118.300，东方5155。
+- Contact Tower 118.300, CES5155.
 
-P: 浦东地面，东方5155，L02，申请滑行。
+### 18.10 最终进近
 
-> Pudong Ground, CES5155, at L02, request taxi.
+飞行员:
 
-A: 东方5155，沿L02，L19。在B外等待。
+- 塔台，东方5155，36L航道建立了，（预计停机位107）。
+- Tower, CES5155, runway 35R Localizer established, (booking gate 107).
 
-> CES5155, Taxi via L02, L19. Hold short at B.
+管制员:
 
-P: 沿L02，L19。在B外等待, 东方5155。
+- 东方5155，继续进近，跑道36L，（预计机位107已抄收）。
+- CES5155, continue approach, runway 36L, (booking gate 107 received).
 
-> Taxi via L02, L19. Hold short at B, CES5155
+管制员:
 
-##### 短跑道起飞
+- 东方5155，地面风180度，2米每秒，修正海压1029，跑道36L，可以落地。
+- CES5155, surface wind 180 degress, 2 meters per second, runway 36L, clear to land.
 
-A: 东方5515，能否接受从B1，非全跑道离场，跑道35R，(可用起飞距离3780米)，是否接受？
+飞行员:
 
-> CES5155, Advise able to depart from runway 35R, intersection B1, (take-off distance available[TODA] is 3780m).
-
-P: 接受，东方5515。
-
-> Accept, CES5155.
-
----
-
-A: 东方5155，继续滑行沿B，B1，跑道35R外等。
-
-> CES5155, Continue taxi via B, B1, hold short at runway 35R.
-
-P: 继续滑行沿B，B1，跑道35R外等，东方5155。
-
-> Continue taxi via B, B1, hold short at runway 35R, CES5155.
-
-A: 东方5155，联系浦东塔台118.800。
-
-> CES5155, Contact Pudong Tower 118.800.
-
-P: 塔台118.800，东方5155。
-
-> Contact Pudong Tower 118.800, CES5155.
-
----
-
-#### 塔台(TWR)
-
-##### 起飞
-
-P: 塔台，东方5155，B1，35R外等。
-
-> Tower, CES5155, hold short at B1, departure runway 35R.
-
-A: 东方5155，(目视前机A321离地后)，进跑道35R等待。
-
-> CES5155, (behind A321 airborne)，Line up (behind) and wait, runway 35R.
-
-P: 进跑道35R等待，(目视前机A321离地后)，东方5155。
-
-> Line up (behind) and wait, (behind A321 airborne), runway 35R, CES5155.
-
----
-
-```
-METAR ZSPD 301200Z 19002MPS CAVOK 13/05 Q1017 NOSIG
-```
-
-A: 东方5155，地面风190，2米/秒，（修正海压1017），跑道35R，(B1可用起飞距离3780米)，可以起飞。
-
-> CES5155, Surface wind 190 degrees, 2 meters per second, runway 35R, (intersection B1, take-off distance available
-> 3780m), cleared for take-off.
-
-P: 跑道35R，可以起飞，东方5155。
-
-> Runway 35R, cleared for take-off, CES5155.
-
-P: 跑道35R，离地了，东方5155。
-
-> Runway 35R, airborne, CES5155.
-
-A: 东方5155，联系上海进近120.300。
-
-> CES5155, Contact Shanghai Approach 120.300.
-
-P: 联系上海进近120.300，东方5155。
-
-> Contact Shanghai Approach 120.300, CES5155.
-
----
-
-#### 进近(APP)
-
-##### 离场
-
-P: 上海进近，东方5515，跑道35R离地，现在通过高度300，上900。
-
-> Shanghai Approach, CES5515, runway 35R airborne, passing 300m to 900m.
-
-A: 东方5515，上海进近，雷达识别了，程序离港，上到修正海压3000，（终端区）修正海压1017。
-
-> CES5515, Shanghai Approach, radar identified, follow SID, climb and maintain 3000 on (terminal) QNH1017.
-
-P: 程序离港，上到修正海压3000，（终端区）修正海压1017，东方5515.
-
-> Follow SID, climb and maintain 3000 on (terminal) QNH1017, CES5515.
-
----
-
-###### 减表速
-
-A: 东方5155，证实当前表速。
-
-> CES5155, report indicated air speed.
-
-P: 表速250，东方5155。
-
-> Speed 250 knots, CES5155.
-
-A: 东方5515，由于间隔，减表速200。
-
-> CES5515, reduce speed to 200 knots.
-
-P: 减表速200，东方5155。
-
-> reduce speed to 200 knots, CES5515.
-
----
-
-A: 东方5515，继续上到标准气压6000。
-
-> CES5515, Continue Climb and maintain 6000m on standard.
-
-P: 上标准气压6000，东方5515。
-
-> Climb and maintain 6000m on standard, CES5515.
-
-A: 东方5155，联系上海124.550。
-
-> CES5515, Contact Shanghai 124.550.
-
-P: 联系上海124.550，东方5155。
-
-> Contact Shanghai 124.550, CES5155.
-
----
-
-#### 区域(CTR)
-
-##### 区域
-
-P: 上海，东方5155，保持6000。
-
-> Shanghai, CES5155, maintain 6000m.
-
-A: 东方5155，上海雷达识别了，上到标准气压104，自主领航。
-
-> CES5155, Shanghai radar identified, climb and maintain 10,400m, own navigate.
-
-P: 上到标准气压104自主领航，东方5155。
-
-> Climb and maintain 10,400m, own navigate, CES5155.
-
-A: 东方5155，联系北京125.900。
-
-> CES5155, Contact Beijing 125.900.
-
-P: 联系北京125.900，东方5155.
-
-> Contact Beijing 125.900, CES5155.
-
-P: 北京，东方5155，保持6000。
-
-> Beijing, CES5155, maintain 10,400m.
-
-A: 东方5155，北京，应答机 4100。
-
-> CES5155, Beijing, Squawk 4100.
-
-P: 应答机 4100，东方5155。
-
-> Squawk 4100, CES5155.
-
-A: 东方5155，北京，雷达识别了。
-
-> CES5155, Beijing, radar identified.
-
-P: 东方5155。
-
-> CES5155.
-
-###### 偏置
-
-A: 东方5155，证实你们有偏置能力。
-
-> CES5155, Confirm you have offset capability.
-
-P: 是，东方5155。
-
-> Affirm, CES5155.
-
-A: 东方5155，左偏置5海里。
-
-> CES5155, offset 5nm left of track.
-
-P: 左偏置5海里，东方5155。
-
-> Offset 5nm left of track, CES5155.
-
----
-
-###### 雷达引导偏置
-
-A: 东方5155，证实你们有偏置能力。
-
-> CES5155, Confirm you have offset capability.
-
-P: 不可用，东方5155。
-
-> Not available, CES5155.
-
-A: 雷达引导偏置，左转，航向020。
-
-> Radar vector offset, turn left heading 020.
-
----
-
-A: 东方5155，下到标准气压5400。
-
-> CES5155, descend and maintain 6000m on standard.
-
-P: 下标准气压5400，东方5155.
-
-> descend and maintain 5400m on standard, CES5155.
-
-A: 东方5155，预计沿AVBOX-7X进场，（盲降Z），跑道36L。
-
-> CES5155, Expect follow AVBOX-7X arrival, (ILS Z), runway 36L.
-
-P: 预计沿AVBOX-7X进场，（盲降Z），跑道36L，东方5155
-
-> Expect follow AVBOX-7X arrival, (ILS Z), runway 36L, CES5155
-
-A: 东方5155，联系北京进近120.600。
-
-> CES5155, Contact Beijing Approach 120.600.
-
-P: 联系北京进近120.600，东方5155。
-
-> Contact Beijing Approach 120.600, CES5155.
-
----
-
-#### 进近(APP)
-
-##### 进场
-
-```
-METAR ZBAA 301400Z 18002MPS 150V210 CAVOK M02/M08 Q1029 NOSIG 
-```
-
-P: 北京进近，东方5155，当前在AVBOX，保持5400，（通播A）。
-
-> Beijing Approach, CES5155, now at AVBOX maintain 5400m, information A.
-
-A: 东方5155，北京进近，雷达识别了，（通波A有效），沿AVBOX-7X进场，（盲降Z），跑道36R。
-
-> CES5155, Beijing Approach, Radar identified, (information A is available), follow AVBOX-7X arrival, ILS Z, runway 36R.
-
-P: 沿AVBOX-7X进场，（盲降Z），跑道36L，东方5155。
-
-> Follow AVBOX-7X arrival, (ILS Z), runway 36L, CES5155.
-
-A: 东方5155，下到4200保持。
-
-> CES5155, Descend and maintain 4200m.
-
-P: 下4200保持，东方5155。
-
-> Descend and maintain 4200m, CES5155.
-
-A: 东方5155，下到修正海压2400保持，（终端区）修正海压1029。
-
-> CES5155, Descend and maintain 2400m on (terminal) QNH1029.
-
-P: 下到修正海压2400，（终端区）修正海压1029，东方5155。
-
-> Descend and maintain 2400m on (terminal) QNH1029, CES5155.
-
-A: 东方5155，下到1800保持。
-
-> CES5155, Descend and maintain 1800m.
-
-P: 下1800保持，东方5155。
-
-> Descend and maintain 1800m, CES5155.
-
-A: 东方5155，（跟程序），建立跑道36L盲降，航向道建立报。
-
-> CES5155, (Follow STAR), Clear to ILS approach runway 36L, report Localizer established.
-
-P: （跟程序），建立跑道36L盲降，航向道建立报，东方5155。
-
-> (Follow STAR), Clear to ILS approach runway 36L, report Localizer established, CES5155.
-
----
-
-##### 盲降建立
-
-P: 跑道36L，航向道建立了，东方5155.
-
-> Runway 36L, Localizer established, CES5155.
-
-A: 东方5155，雷达服务终止，联系塔台118.300。
-
-> CES5155, Radar service termindated, Contact Tower 118.300.
-
-P: 联系塔台118.300，东方5155。
-
-> Contact Tower 118.300, CES5155.
-
----
-
-#### 塔台(TWR)
-
-##### 最终进近
-
-P: 塔台，东方5155，36L航道建立了，（预计停机位107）。
-
-> Tower, CES5155, Runway 35R Localizer established, (booking gate 107).
-
-A: 东方5155，继续进近，跑道36L，（预计机位107已抄收）。
-
-> CES5155, Continue approach, runway 36L, (booking gate 107 received).
-
-A: 东方5155，地面风180度，2米每秒，修正海压1029，跑道36L，可以落地。
-
-> CES5155, Surface wind 180 degress, 2 meters per second, runway 36L, clear to land.
-
-P: 跑道36L，可以落地，东方5155。
-
-> Runway 36L, clear to land, CES5155.
+- 跑道36L，可以落地，东方5155。
+- Runway 36L, clear to land, CES5155.
 
 ##### 落地滑回
 
-P: 塔台，东方5155，P6 脱离了。
+飞行员:
 
-> Tower, CES5155, P6 vacated.
+- 塔台，东方5155，P6 脱离了。
+- Tower, CES5155, P6 vacated.
 
-A: 东方5155，自行滑行至机位107号，关车报。
+管制员:
 
-> CES5155, Taxi to gate 107 by your own choice, report engine shutdown.
+- 东方5155，自行滑行至机位107号，关车报。
+- CES5155, taxi to gate 107 by your own choice, report engine shutdown.
 
-P: 自行滑行至机位107号，关车报，东方5155。
+飞行员:
 
-> Taxi to gate 107 by my own choice, report engine shutdown, CES5155.
-
-> [!Note]
->
->在地面不繁忙的情况下，可让机组自己进行滑行。
->
->此部分内容格式与先前[起飞的滑行](#_38)一致，这里不再赘述。
+- 自行滑行至机位107号，关车报，东方5155。
+- Taxi to gate 107 by my own choice, report engine shutdown, CES5155.
 
 ## 参考资料
 
 1. [CAAC.空中交通无线电通话用语（第四次征求意见版V79）](https://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/201511/P020170804579259214829.pdf)
-
 2. [CAAC.MH/T 4014-2003.空中交通无线电通话用语](https://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/201511/P020170804579259214829.pdf)
-
-3. [CAAC.CCAR-93TM-R6.民用航空空中交通管理规则](http://www.caac.gov.cn/XXGK/XXGK/MHGZ/202303/P020250811508100344431.pdf)
+3. [CAAC.CCAR-93TM-R6.民用航空空中交通管理规则](htt飞行员://www.caac.gov.cn/XXGK/XXGK/MHGZ/202303/P020250811508100344431.pdf)
+4. [ATS Unit Call Signs](https://skybrary.aero/articles/ats-unit-call-signs)
 
 [《空中交通无线电通话用语（第四次征求意见版V79）》]: https://www.caac.gov.cn/XXGK/XXGK/BZGF/HYBZ/201511/P020170804579259214829.pdf
