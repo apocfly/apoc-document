@@ -6,6 +6,9 @@ author:
 
 # ApocClient 安装使用教程
 
+> [!NOTE]
+> 正在施工中...
+
 ## 1. 前言
 
 ApocClient是由APOC技术团队自主开发的桌面联飞客户端，除去标准联飞功能外，额外集成语音通信与CPDLC/ACARS数据链通信功能。
@@ -20,8 +23,7 @@ ApocClient目前支持微软模拟飞行 MSFS 2020/2024 以及 X-Plane 11/12 四
 
 - ApocClient安装包
   > [!NOTE]
-  > 您可以前往我们[下载站](https://file.apocfly.com/ApocClient)或者[官方QQ群](https://qm.qq.com/q/KY7K0yo0eY)
-  下载最新版本的ApocClient安装包  
+  > 您可以前往我们[下载站](https://file.apocfly.com/ApocClient)或者[官方QQ群](https://qm.qq.com/q/KY7K0yo0eY)下载最新版本的ApocClient安装包  
   > **截止编写本文**，最新版本为`1.0.0-beta.13`
 - Windows 10/11 64位操作系统
 - 至少`256MB`空闲磁盘空间
@@ -35,37 +37,6 @@ ApocClient目前支持微软模拟飞行 MSFS 2020/2024 以及 X-Plane 11/12 四
 > 对于其他模拟器，请使用[Swift](./swift.md)与[AudioClient](./audio_client.md)
 
 ## 3. 安装ApocClient
-
-1. 双击ApocClient安装包，选择安装程序语言
-   ![](./images/apoc_client/3-1-select-language.png)
-2. 阅读并同意EULA
-   ![](./images/apoc_client/3-2-agree-EULA.png)
-3. 检测网络
-   ![](./images/apoc_client/3-3-network-detected.png)
-4. 选择模拟器
-   ![](./images/apoc_client/3-4-select-simulator.png)
-5. 微软模拟飞行2020
-   ![](./images/apoc_client/3-5-MSFS2020.png)
-6. 微软模拟飞行2024
-   ![](./images/apoc_client/3-6-MSFS2024.png)
-7. XPlane 11
-   ![](./images/apoc_client/3-7-xp11.png)
-8. XPlane 12
-   ![](./images/apoc_client/3-8-xp12.png)
-9. 选择安装目录
-    ![](./images/apoc_client/3-9-adjust-install-path.png)
-10. 创建桌面快捷方式
-    ![](./images/apoc_client/3-10-create-desktop-shortcut.png)
-11. asd
-12. asd
-13. asd
-14. asd
-15. asd
-16. asd
-17. asd
-18. asd
-19. asd
-
 
 ## 4. 配置ApocClient
 
