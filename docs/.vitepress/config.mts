@@ -192,6 +192,7 @@ export default defineConfig({
                             {text: '航空器尾流间隔', link: '/aviation/turbulence'},
                             {text: '程序过渡点', link: '/aviation/via'},
                             {text: '陆空对话', link: '/aviation/airground'},
+                            {text: '本场起落航线', link: '/aviation/traffic_pattern'},
                         ]
                     },
                     {
