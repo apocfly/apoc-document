@@ -1,6 +1,7 @@
 import {defineConfig} from 'vitepress'
 import type {MarkdownItAsync} from "markdown-it-async";
 import footnote from 'markdown-it-footnote';
+import {tooltipPlugin} from "./plugins/tooltip";
 
 const pageAuthorDefaults = {
     root: {
@@ -51,6 +52,7 @@ export default defineConfig({
         math: true,
         config(md: MarkdownItAsync) {
             md.use(footnote);
+            md.use(tooltipPlugin);
             const normalizeMathSvg = (value: string) =>
                 value.replace(/viewbox=/g, 'viewBox=')
 
@@ -101,6 +103,9 @@ export default defineConfig({
             }
         }
     },
+    head: [
+        ['link', {rel: 'icon', type: 'image/png', href: '/logo.png'}]
+    ],
     themeConfig: {
         logo: "/logo.png",
         search: {
@@ -192,7 +197,7 @@ export default defineConfig({
                             {text: '航空器尾流间隔', link: '/aviation/turbulence'},
                             {text: '程序过渡点', link: '/aviation/via'},
                             {text: '陆空对话', link: '/aviation/airground'},
-                            {text: '本场起落航线', link: '/aviation/traffic_pattern'},
+                            {text: '本场起落', link: '/aviation/local_training'},
                         ]
                     },
                     {
