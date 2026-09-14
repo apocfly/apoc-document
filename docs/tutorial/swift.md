@@ -47,84 +47,9 @@ Swift 功能强大，但界面相对老旧且为纯英文，不少新手用户�
 
 ![xswiftbus 安装](./images/swift/3.png)
 
-### 1.2 下载机模映射包
+### 1.2 机模映射包
 
-#### 1.2.1 关于机模映射包
-
-机模映射包是完整联飞体验中不可或缺的一环。不同模拟飞行平台可能有所不同，但其底层工作原理均可概括为以下三步：
-
-1. **识别机模**：模拟飞行软件与联飞客户端共同读取并识别本地的`飞机模型`（即`机模`）。
-2. **添加飞机**：在模拟飞行环境中生成对应的`AI飞机`。
-3. **实时映射**：联飞客户端根据连飞服务器上其他飞友的实时状态数据，同步驱动这些`AI飞机`的位置、姿态等状态（即`映射`过程）。
-
-通过上述流程，服务器上的其他飞机便被`映射`至您本地的模拟飞行软件中。
-
-简而言之：**`机模`由映射包提供，而`映射`动作则由联飞软件负责执行。**
-
-以下是针对各模拟平台机模映射方案的优化版本，主要依据 Swift 官方文档进行了核实与补充：
-
----
-
-#### 1.2.2 MSFS 2020/2024 映射
-
-根据 Swift 官方文档，MSFS 2020/2024 用户目前主要有三种 AI 机模来源可供选择：
-
-| 方案                                    | 特点                     | 获取方式                                                                                          |
-|---------------------------------------|------------------------|-----------------------------------------------------------------------------------------------|
-| **AIG (Alpha India Group)**           | 模型质量高，机型丰富             | 通过 [AI Manager](https://www.alpha-india.net/ai-manager/) 下载安装，需确保所有机型安装至 MSFS `Community` 文件夹 |
-| **FSLTL**                             | 同样具备高质量模型              | 通过 FlyByWire Installer 下载安装，无需安装其 "injector" 组件                                               |
-| **MTL (Multiplayer Traffic Library)** | 模型精细度略逊于前两者，但包含一些独有的机型 | 通过 [MTL Installer](https://mtl.ivao.aero/installer) 获取                                        |
-
-> [!NOTE]
-> 本文**推荐使用 AIG 映射包**，因其模型质量与机型覆盖范围较为均衡。
-
-**网盘下载（AIG 映射包）** ：[百度网盘](https://pan.baidu.com/s/1fBCBvSGkq6pUC6d7jYa2lA?pwd=9jkc)
-
-下载后请手动解压到 MSFS 的 `Community` 目录下，**注意不要产生文件夹嵌套**。
-
-#### 1.2.3 X-Plane 11/12 映射
-
-Swift 官方文档指出，X-Plane 平台目前最主流的 CSL 模型分发方为 **BlueBell** 与 **X-CSL**。
-
-> [!NOTE]
-> 本文**推荐使用 X-CSL** 作为映射包，其机型覆盖面较广且更新较为活跃。
-
-**安装注意事项**：
-
-1. **存放位置**：CSL 模型必须放置在 X-Plane 程序目录内部（外部链接无效），推荐统一存放在 `Custom Data` 文件夹下。
-2. **目录结构**：建议在 `Custom Data` 下先创建 `CSL` 父文件夹，再将不同来源的 CSL 包分别放入子文件夹中，例如：
-   ```
-   .../X-Plane 12/Custom Data/CSL/X-CSL
-   .../X-Plane 12/Custom Data/CSL/BB
-   ```
-3. **版本要求**：X-Plane 11.50 及以上版本仅支持 OBJ8 格式的 CSL 模型，OBJ7 及更旧版本将无法使用。
-4. **更新模型后**：每次更新模型后，需在 Swift 中**重新生成 Active Model Set**，否则 Swift 无法识别新模型。
-
-**官方资源**：
-
-- [X-CSL 官网](https://x-csl.ru/downloads)
-- [Swift 官方 X-Plane 映射文档](https://swift-project.org/home/models/xplane/)
-
-**网盘下载（X-CSL 映射包）** ：
-
-- [百度网盘](https://pan.baidu.com/s/1FdbYVhd8lucimYaXXuTmMw?pwd=hkps)
-- [123云盘](https://www.123912.com/s/oFMGTd-Rs4gv)（提取码：`tZgp`）
-
-下载后请解压到 X-Plane 目录下的任意位置（推荐 `Custom Data` 文件夹），
-**文件夹名称可自定义，但必须位于 X-Plane 目录内**，X-Plane 无法读取目录以外的文件。
-
-#### 1.2.4 FSX & P3D
-
-根据 Swift 官方文档，FSX 与 P3D 平台目前主流的 AI 机模方案同样来自 **Alpha India Group (AIG)** 。
-
-**官方资源**：
-
-- [AIG 官方网站](http://www.alpha-india.net/software/)
-- [Swift 官方 FSX/P3D 映射文档](https://swift-project.org/home/models/fsx_p3d/)
-
-> [!NOTE]
-> Swift 官方文档中关于 FSX/P3D 的映射说明较为简略，主要指引用户使用 AIG 提供的 AI 模型。
-> 建议通过 AIG 官方渠道获取最新版本的映射包，并按照 AIG 提供的说明进行安装。
+具体参见[安装机模映射包](./model.md)
 
 ## 2 安装 Swift
 
@@ -303,7 +228,7 @@ Swift 官方文档指出，X-Plane 平台目前最主流的 CSL 模型分发方�
    ![服务器配置](./images/swift/41.png)
 
    | 名称          | 左填空栏             | 右填空栏         |
-      |-------------|------------------|--------------|
+         |-------------|------------------|--------------|
    | Name/desc.  | 该服务器显示的名字，可以任意填写 | 服务器的描述       |
    | Eco./type   | FSD (private)    | FSD (VATSIM) |
    | Addr./port  | fsd.apocfly.com  | 6809         |

@@ -176,6 +176,7 @@ export default defineConfig({
                         items: [
                             {text: 'Swift安装使用教程', link: '/tutorial/swift'},
                             {text: 'ApocClient安装使用教程', link: '/tutorial/apoc_client'},
+                            {text: '模型库下载与安装', link: '/tutorial/model'},
                             {text: 'Teamspeak安装使用教程', link: '/tutorial/teamspeak'},
                             {text: 'AudioClient安装使用教程', link: '/tutorial/audio_client'},
                             {text: '飞行计划提交', link: '/tutorial/flightplan'},
