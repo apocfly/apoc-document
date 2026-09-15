@@ -193,6 +193,7 @@ export default defineConfig({
                             {text: '空域分类', link: '/aviation/airspace'},
                             {text: '飞行情报区', link: '/aviation/FIR'},
                             {text: '气压基准与高度表拨正程序', link: '/aviation/QNH'},
+                            {text: '气象报文解读', link: '/aviation/metar'},
                             {text: '平行跑道运行', link: '/aviation/parallel_runway'},
                             {text: '应答机', link: '/aviation/squawk'},
                             {text: '航空器尾流间隔', link: '/aviation/turbulence'},
