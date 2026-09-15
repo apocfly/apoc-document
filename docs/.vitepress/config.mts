@@ -210,7 +210,8 @@ export default defineConfig({
                     {
                         text: '关于本项目',
                         items: [
-                            {text: '贡献者指南', link: '/about/contributing'}
+                            {text: '贡献者指南', link: '/about/contributing'},
+                            {text: '隐私政策', link: '/about/private-policy'}
                         ]
                     }
                 ],
