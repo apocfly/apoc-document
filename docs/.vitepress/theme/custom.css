@@ -57,14 +57,41 @@
   opacity: 0;
   visibility: hidden;
   transform: translate(-50%, 4px);
-  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.4s;
   pointer-events: none;
+}
+
+/* 气泡内的链接单独恢复鼠标事件（pointer-events 可被后代覆盖）：
+   气泡本体保持穿透，因此不会挡住其下方正文里的链接 */
+.vp-doc-tip-body a {
+  pointer-events: auto;
+}
+
+/* 气泡与提示文字之间的间隙由透明伪元素搭桥：
+   鼠标移向气泡的过程中不丢失悬停，气泡里的链接才够得到 */
+.vp-doc-tip-body::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: 8px;
+  pointer-events: auto;
 }
 
 .vp-doc-tip:hover .vp-doc-tip-body {
   opacity: 1;
   visibility: visible;
   transform: translate(-50%, 0);
+}
+
+/* 点击固定展开（由 theme/index.ts 切换 .is-open）：
+   鼠标移开后仍保持显示，且气泡整体恢复交互，便于选中文字或点链接 */
+.vp-doc-tip.is-open .vp-doc-tip-body {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, 0);
+  pointer-events: auto;
 }
 
 :root {
