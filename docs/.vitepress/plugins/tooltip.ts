@@ -1,7 +1,6 @@
 import type MarkdownIt from 'markdown-it'
 
-// 用哨兵字符代替 | 作分隔符：markdown-it 的 escape 规则会抢先消费 \|，
-// 导致 inline 规则拿不到转义信息，哨兵则不会被任何内置规则处理
+// 用哨兵字符代替 | 作分隔符
 const SEPARATOR = '\u0001'
 
 const trim = (value: string) => value.trim()

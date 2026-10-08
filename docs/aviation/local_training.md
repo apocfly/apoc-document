@@ -72,8 +72,8 @@
 
 飞行员:
 
-- 塔台，B-2352，[通播 Alpha 抄收，]申请起落练习。
-- Tower, B-2352, [with information Alpha,], request local training.
+- 虹桥塔台，B2352，[通播 Alpha 抄收，]申请起落训练。
+- HongQiao Tower, B2352, [with information Alpha,], request local training.
 
 此时管制员会根据机场运行细则来给予许可，对于上海虹桥国际机场来说，其机场运行细则第2.22.2条明确写到
 ![](./images/local_training/4-1-AD.png)
@@ -85,14 +85,15 @@
 > 虽然上海虹桥国际机场的机场运行细则内写的C、D类高度(QNH)450m  
 > 但在机场运行细则第2.17条明确写到  
 > ![](./images/local_training/4-2-airspace.png)
-> **虹桥塔台无法对(QNH)300米(含)以上的航空器提供管制服务**
+> **虹桥塔台无法对(QNH)300米(含)以上的航空器提供管制服务** ~~致敬最速OBS之人~~
 
-塞斯纳172属于A类飞机，高度为300米。假设上海虹桥国际机场18R离场，跑道西边的起落航线对于18R来说，即[右起落航线|如果是36L离场，则变成左起落航线]
+塞斯纳172属于A类飞机，起落航线高度为(QNH)300米。  
+假设上海虹桥国际机场18R离场，跑道西边的起落航线对于18R来说，即为[右起落航线|如果是36L离场，则变成左起落航线]
 
 管制员:
 
-- B-2352，跑道 36，地面风 330，3 米/秒，可以起飞。
-- B-2352, runway 36, surface wind 330 degrees, 3 meters per second, cleared for take-off.
+- B2352，可以进行本场起落训练，使用跑道18R，右起落航线，高度修正海压300米，修正海压1008。
+- B2352, runway 36, surface wind 330 degrees, 3 meters per second, cleared for take-off.
 
 飞行员:
 

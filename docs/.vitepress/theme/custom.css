@@ -1,116 +1,79 @@
 .vp-doc .page-title-meta {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  flex-wrap: wrap;
-  margin: 8px 0 8px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin: 8px 0 8px;
 }
 
 .vp-doc h1.has-page-title-meta {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .vp-doc .page-title-author {
-  color: var(--vp-c-text-2);
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 24px;
-  white-space: nowrap;
+    color: var(--vp-c-text-2);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    white-space: nowrap;
 }
 
 @media (max-width: 640px) {
-  .vp-doc .page-title-meta {
-    margin: 8px 0 28px;
-  }
+    .vp-doc .page-title-meta {
+        margin: 8px 0 28px;
+    }
 }
 
 .vp-doc-tip {
-  position: relative;
-  display: inline-block;
+    position: relative;
+    display: inline-block;
 }
 
 .vp-doc-tip-text {
-  border-bottom: 1px dashed var(--vp-c-text-3);
-  cursor: help;
+    border-bottom: 1px dashed var(--vp-c-text-3);
+    cursor: help;
 }
 
 .vp-doc-tip-body {
-  position: absolute;
-  bottom: 100%;
-  left: 50%;
-  z-index: 10;
-  box-sizing: border-box;
-  width: max-content;
-  max-width: 320px;
-  margin-bottom: 8px;
-  padding: 8px 12px;
-  border: 1px solid var(--vp-c-divider);
-  border-radius: 8px;
-  background-color: var(--vp-c-bg-elv);
-  box-shadow: var(--vp-shadow-2);
-  color: var(--vp-c-text-1);
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.6;
-  text-align: left;
-  white-space: normal;
-  opacity: 0;
-  visibility: hidden;
-  transform: translate(-50%, 4px);
-  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.4s;
-  pointer-events: none;
-}
-
-/* 气泡内的链接单独恢复鼠标事件（pointer-events 可被后代覆盖）：
-   气泡本体保持穿透，因此不会挡住其下方正文里的链接 */
-.vp-doc-tip-body a {
-  pointer-events: auto;
-}
-
-/* 气泡与提示文字之间的间隙由透明伪元素搭桥：
-   鼠标移向气泡的过程中不丢失悬停，气泡里的链接才够得到 */
-.vp-doc-tip-body::after {
-  content: '';
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  height: 8px;
-  pointer-events: auto;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    z-index: 10;
+    box-sizing: border-box;
+    width: max-content;
+    max-width: 320px;
+    margin-bottom: 8px;
+    padding: 8px 12px;
+    border: 1px solid var(--vp-c-divider);
+    border-radius: 8px;
+    background-color: var(--vp-c-bg-elv);
+    box-shadow: var(--vp-shadow-2);
+    color: var(--vp-c-text-1);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+    text-align: left;
+    white-space: normal;
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(-50%, 4px);
+    transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
+    pointer-events: none;
 }
 
 .vp-doc-tip:hover .vp-doc-tip-body {
-  opacity: 1;
-  visibility: visible;
-  transform: translate(-50%, 0);
-}
-
-/* 点击固定展开（由 theme/index.ts 切换 .is-open）：
-   鼠标移开后仍保持显示，且气泡整体恢复交互，便于选中文字或点链接 */
-.vp-doc-tip.is-open .vp-doc-tip-body {
-  opacity: 1;
-  visibility: visible;
-  transform: translate(-50%, 0);
-  pointer-events: auto;
-}
-
-:root {
-  --vp-doc-spoiler-fg: #1f1f1f;
-}
-
-.dark {
-  --vp-doc-spoiler-fg: #e2e2e2;
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, 0);
 }
 
 .vp-doc-spoiler {
-  color: transparent;
-  text-shadow: 0 0 0.15em var(--vp-doc-spoiler-fg);
-  cursor: pointer;
-  transition: color 0.2s ease, text-shadow 0.2s ease;
+    filter: blur(5px);
+    cursor: pointer;
+    transition: filter 0.2s ease;
 }
 
 .vp-doc-spoiler:hover {
-  color: var(--vp-doc-spoiler-fg);
-  text-shadow: none;
-  cursor: text;
+    filter: blur(0);
+    cursor: text;
 }
