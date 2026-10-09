@@ -181,7 +181,7 @@
 
 首选自然拼读，比如`ANDIN`读作`AND-IN`，`PIKAS`读作`PI-KA-S`  
 如果拼不出来或者不会读，也可以按顺序读出，比如`MULOV`读作`Mike Uniform Lima Oscar Victor`  
-字母加数字也按顺序读出，比如`P23`读作`Papa 两三`或者`Papa Two Tree`
+字母加数字也按顺序读出，比如`P23`读作`Pee 两三`或者`Pee Two Tree`
 
 ## 13. 标准的单词和词组
 
