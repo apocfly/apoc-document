@@ -37,9 +37,9 @@ const getLocalizedValue = (
     return value ?? fallback
 }
 
-const normalizeMathSvg = (value: string) => {
-    value.replace(/viewbox=/g, 'viewBox=');
-}
+// MathJax 输出的 SVG 属性为小写 viewbox，需归一化为 viewBox；
+// 此处必须 return，否则数学渲染器返回 undefined，公式会渲染成字面文本 "undefined"
+const normalizeMathSvg = (value: string) => value.replace(/viewbox=/g, 'viewBox=')
 
 export const authorPlugin = (md: MarkdownIt) => {
     const renderInlineMath = md.renderer.rules.math_inline
