@@ -745,8 +745,8 @@ NDB台同理，比如`PK`可以读作`栎社`，也可以读作`Papa Kilo`
 - CES5155, (follow STAR), clear for ILS approach runway 36L, report localizer established.
 
 飞行员:
--（跟程序），建立跑道36L盲降，航向道建立报，东方5155。
 
+- （跟程序），建立跑道36L盲降，航向道建立报，东方5155。
 - (Follow STAR), clear for ILS approach runway 36L, report localizer established, CES5155.
 
 ### 18.9 盲降建立
